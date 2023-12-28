@@ -1,0 +1,123 @@
+\usepackage[english, latin,british]{babel}
+\usepackage{fontspec}
+\usepackage{paracol}
+\setmainfont{Linux Libertine O}
+\newfontface{\vectis}{Scribish}
+\newfontface{\inglesh}{Linux Biolinum O}
+% \newfontface{\justbold}{Calluna Bold}
+\usepackage[autocompile]{gregoriotex}
+\setlength{\trimtop}{0pt}
+\setlength{\trimedge}{0pt}
+\settypeblocksize{170mm}{115mm}{*} % Was 101mm in a5
+\setulmargins{*}{*}{1.4}
+\setlrmargins{*}{*}{1.2}
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{.8\onelineskip}{*}
+\checkandfixthelayout
+\usepackage{graphicx}
+
+\tolerance=5000
+\pretolerance=1000
+
+\columnratio{0.6}
+
+\setlength{\parskip}{0pt}
+%\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\parindent}{0pt}
+\setlength{\stanzaskip}{6pt plus 2pt minus 1pt}
+
+%\grechangestyle{translation}{\inglesh \fontsize{10}{14}\selectfont}
+\grechangestyle{translation}{\inglesh \fontsize{8}{10}\selectfont}
+%\newcommand\tr[1]{\selectlanguage{british}{\inglesh \fontsize{10}{14.5pt}\selectfont #1}}
+\newcommand\tr[1]{\selectlanguage{british}{\inglesh \fontsize{8}{10}\selectfont #1}}
+
+\grechangestyle{initial}{\vectis \fontsize{22}{24}\selectfont}
+\grechangestyle{annotation}{\tiny}
+
+\grechangestaffsize{15}
+\grechangedim{spacebeneathtext}{3pt}{scalable}
+%\gre@createdim{spacebeneathtext}{0 cm}{scalable}%
+\grechangedim{translationheight}{12pt}{scalable}
+%\gre@createdim{translationheight}{0.5 cm}{scalable}%
+
+
+\newcommand{\rubrics}[1]{\textit{#1}}
+\newcommand{\rubricswref}[2]{\noindent\textit{#1} \hfill #2}
+%\newcommand{\latin}[1]{#1\par}
+%\newcommand{\vern}[1]{\footnotesize\textit{#1}\par}
+
+\newcounter{versecount}
+\setcounter{versecount}{0}
+
+\newcommand{\vs}{\ifnum \value{versecount}>0 \theversecount . \stepcounter{versecount}\fi}
+
+\newcommand{\latin}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1\switchcolumn\selectlanguage{british}}
+\newcommand{\vern}[1]{\tr{#1}\switchcolumn*}
+% Just added the * at the end of vern - see what happens
+
+%\def\latin#1{\ifnum \value{versecount}>0 \stepcounter{versecount} \makebox[0pt][r]{\theversecount .~}\fi\selectlanguage{latin}#1\selectlanguage{british}\strut}%used to be a \par here
+%\def\vern#1{\par \quad \hangindent=1em \tr{#1\par}\par\pagebreak[3]}
+
+\newcommand{\startParallel}{\begin{paracol}{2}\selectlanguage{latin}}
+		\newcommand{\stopParallel}{\end{paracol}\selectlanguage{british}}
+%\newcommand{\lati}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1}
+%\newcommand{\verna}[1]{\switchcolumn\tr{#1}\switchcolumn}
+
+
+% From Prima:
+
+\newcommand{\psalmverse}[2]{{{\selectlanguage{latin}{#1}}\par\quad \hangindent=1em \selectlanguage{english}\tr{#2\par}}\pagebreak[3]}%%-3.4mm
+\newcommand{\psalmverselast}[2]{{{\selectlanguage{latin}{#1}}\par\quad \hangindent=1em \selectlanguage{english}\tr{#2\par}}\pagebreak[3]}%%-3.4mm
+
+\newcommand{\thedate}{\today}
+
+\newcommand{\mytitle}[2]{\begin{center}
+		\huge
+		\textsc{#1}
+
+		\normalsize #2
+
+		\large
+		\textsc{Officium Parvum Beatae Mariae Virginis}
+
+		\footnotesize
+		\thedate
+
+		https://littleoffice.brandt.id.au
+
+	\end{center}
+
+	\includegraphics[height=\baselineskip]{by.pdf}
+	This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit
+	http://creativecommons.org/licenses/by/4.0/.
+}
+
+\newcommand{\deusinadjref}{
+	\rubrics{Deus in adjutorium as at the beginning of Lauds, page \pageref{deus-memento}}
+
+	\startParallel
+	\setcounter{versecount}{0}
+	\latin{Deus in adjutórium meum intende.}
+	\vern{O God, come to my assistance.}
+	\latin{Dómine, ad adjuvándum me festína.}
+	\vern{O Lord, make haste to help me.}
+	\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
+	\vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
+	\stopParallel
+
+	\rubrics{Then the Hymn, \emph{Memento Rerum Conditor}, page \pageref{memento}.}
+}
+
+%\def\startParallel{}
+%\def\stopParallel{}
+\def\setupParallel{}
+
+\setsecheadstyle{\Large\bfseries\raggedright}
+\setsubsecheadstyle{\large\bfseries\raggedright}
+\renewcommand\cftchapterfont{\bfseries}
+
+\chapterstyle{bringhurst}
+\nouppercaseheads
+
+\pagestyle{headings}
+

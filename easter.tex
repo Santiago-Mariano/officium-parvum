@@ -1,0 +1,228 @@
+\documentclass[12pt,a5paper,openany]{memoir}
+\input stdsetup
+
+
+\nouppercaseheads
+\makepagestyle{mystyle}
+\setlength{\headwidth}{\dimexpr\textwidth+\marginparsep+\marginparwidth\relax}
+\makerunningwidth{mystyle}{\headwidth}
+\makeatletter
+\makepsmarks{mystyle}{%
+\createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
+\createmark{part}{left}{nonumber}{}{}
+%\createmark{part}{right}{shownumber}{}{. \space}
+%\createmark{section}{left}{nonumber}{}{}
+}
+\makeatother
+
+\makeevenhead{mystyle}{\itshape Paschal Little Office}{}{}
+\makeoddhead{mystyle}{}{}{\itshape\rightmark}
+\makeevenfoot{mystyle}{\thepage}{}{}
+\makeoddfoot{mystyle}{}{}{\thepage}
+\makepagestyle{plain}
+\makerunningwidth{plain}{\headwidth}
+\makeevenfoot{plain}{\thepage}{}{}
+\makeoddfoot{plain}{}{}{\thepage}
+
+\pagestyle{mystyle}
+
+\renewcommand{\sectionmark}[1]{}
+\renewcommand{\subsectionmark}[1]{}
+
+\begin{document}
+
+\mytitle{Officium Parvum}{All the Hours}
+
+\tableofcontents*
+
+\chapter{Prayers Before the Office}
+
+\startParallel
+Áperi Dómine, os meum ad benedicéndum nomen sanctum tuum: munda quoque cor meum ab ómnibus vanis, pervérsis et aliénis cogitatiónibus; intelléctum illúmina, afféctum inflámma, ut digne, atténte ac devóte hoc Offícium recitáre váleam, et exaudíri mérear ante conspéctum divínæ Majestátis túæ. Per Christum Dóminum nostrum.
+
+\Rbar. Amen.
+
+\switchcolumn
+
+\selectlanguage{british}
+\tr{O Lord, open Thou my mouth, that it may bless Thy holy name; cleanse my heart, too, from all vain, evil, or wandering thoughts. Enlighten mine understanding, kindle mine affections, that I may be able to say this Office meetly with attention and devotion and may deserve to be heard before the presence of Thy divine Majesty. Through Christ our Lord.}
+
+\tr{\Rbar. Amen.}
+
+\switchcolumn*
+
+\selectlanguage{latin}
+Dómine, in unióne illíus divínæ intentiónis, qua ipse in terris laudes Deo persolvísti, has tibi Horas (vel hanc tibi Horam) persólvo.
+\switchcolumn
+\selectlanguage{british}
+\tr{O Lord, in union with that divine intention wherewith Thou Thyself, while on earth, didst offer praises unto God, I offer these Hours unto Thee.}
+\stopParallel
+
+\chapter{Matutinum}
+
+\input easter-matins
+
+\chapter{Laudes}
+
+\startParallel
+\latin{Deus in adjutórium meum intende.}
+\vern{O God, come to my assistance.}
+
+\latin{Dómine, ad adjuvándum me festína.}
+\vern{O Lord, make haste to help me.}
+
+\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
+\vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
+\stopParallel
+
+
+\input easter-lauds
+
+
+\chapter{Prima}
+
+\startParallel
+\latin{Deus in adjutórium meum intende.}
+\vern{O God, come to my assistance.}
+
+\latin{Dómine, ad adjuvándum me festína.}
+\vern{O Lord, make haste to help me.}
+
+\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
+\vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
+\stopParallel
+
+
+%\deusinadjref
+
+%\input easter-prime
+
+
+\chapter{Tertia}
+
+\startParallel
+\latin{Deus in adjutórium meum intende.}
+\vern{O God, come to my assistance.}
+
+\latin{Dómine, ad adjuvándum me festína.}
+\vern{O Lord, make haste to help me.}
+
+\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
+\vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
+\stopParallel
+
+
+%\deusinadjref
+
+\input easter-terce
+
+
+\chapter{Sexta}
+
+\startParallel
+\latin{Deus in adjutórium meum intende.}
+\vern{O God, come to my assistance.}
+
+\latin{Dómine, ad adjuvándum me festína.}
+\vern{O Lord, make haste to help me.}
+
+\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
+\vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
+\stopParallel
+
+
+%\deusinadjref
+
+\input easter-sext
+
+
+\chapter{Nona}
+
+\startParallel
+\latin{Deus in adjutórium meum intende.}
+\vern{O God, come to my assistance.}
+
+\latin{Dómine, ad adjuvándum me festína.}
+\vern{O Lord, make haste to help me.}
+
+\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
+\vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
+\stopParallel
+
+
+%\deusinadjref
+
+\input easter-none
+
+
+\chapter{Vesperae}
+
+%Deus in adjutorium as at the beginning of Lauds, page \pageref{deus-memento}
+
+\startParallel
+\latin{Deus in adjutórium meum intende.}
+\vern{O God, come to my assistance.}
+
+\latin{Dómine, ad adjuvándum me festína.}
+\vern{O Lord, make haste to help me.}
+
+\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen. Alleluia.}
+\vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen. Alleluia.}
+\stopParallel
+
+\input easter-vespers
+
+
+\chapter{Completorium}
+
+
+\input easter-compline
+
+%\rubrics{Compline always finishes with the Marian Antiphon of the season, page \pageref{marian-ants}.}
+
+%\chapter{Marian Antiphon}
+
+%\gresetinitiallines1
+\label{marian-ants}
+%\input marianantiphon
+
+
+\chapter{Prayers After the Office}
+
+\selectlanguage{latin}
+\startParallel
+Sacrosánctæ et indivíduæ Trinitáti, crucifíxi Dómini nostri Jesu Christi humanitáti, beatíssimæ et gloriosíssimæ sempérque Vírginis Maríæ fœcúndæ integritáti, et ómnium Sanctórum universitáti sit sempitérna laus, honor, virtus et glória ab omni creatúra, nobísque remíssio ómnium peccatórum, per infiníta sǽcula sæculórum.
+
+\Rbar. Amen.
+
+\switchcolumn
+\selectlanguage{british}
+\tr{To the most holy and undivided Trinity, to the manhood of our crucified Lord Jesus Christ, to the fruitful virginity of the most blessed and glorious Mary, ever a virgin, to the entire assembly of the saints, be ascribed everlasting praise, honor, power, and glory, by every creature; and to us be granted the remission of all our sins, world without end.
+
+\Rbar. Amen.}
+
+\switchcolumn*
+
+
+\Vbar. Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Pátris Fílium.
+
+\Rbar. Et beáta úbera, quæ lactavérunt Christum Dóminum.
+
+\switchcolumn
+
+\selectlanguage{british}
+\tr{\Vbar. Blessed is the Virgin Mary's womb, which bore the Son of the everlasting Father.
+
+\Rbar. And blessed are the breasts which nourished Christ our Lord.}
+
+
+\switchcolumn*
+\selectlanguage{latin}
+
+Pater, Ave, and Credo, in silence.
+
+\stopParallel
+
+
+\end{document}
+

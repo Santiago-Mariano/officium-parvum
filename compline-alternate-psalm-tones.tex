@@ -1,0 +1,139 @@
+\documentclass[12pt,a5paper,openany]{memoir}
+
+\input stdsetup
+
+%\renewcommand{\latin}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1\switchcolumn\selectlanguage{british}}
+%\renewcommand{\vern}[1]{\tr{#1}\switchcolumn}
+
+
+\begin{document}
+
+\chapter{Tonus in directum - Antiphonale Monasticum}
+
+Here I begin with the Tonus in directum which my family adopted. We would have been familiar with this tune from Compline sung after Thursday evening Masses at Maternal Heart, Lewisham, which church originally belonged to a Benedictine order of nuns, so they would use the Monastic books.
+
+\medskip
+
+
+Tonus in directum usurpatur pro omnibus quibuslibet Psalmis qui sine Antiphona cantantur.
+
+\section*{Psalm 128}
+
+\gresetinitiallines0
+\gregorioscore{psalms/128v1}
+
+\startParallel
+\input psalms/128vv
+\stopParallel
+
+\section*{Psalm 129}
+\gregorioscore{psalms/psalm129v1}
+
+\startParallel
+\input psalms/129vv
+\stopParallel
+
+\section*{Psalm 130}
+\gregorioscore{psalms/psalm130v1}
+
+\startParallel
+\input psalms/130vv
+\stopParallel
+
+\setcounter{enumi}{0}
+
+\chapter{Tonus in directum - Antiphonale Romanum}
+
+\label{t-i-d}
+
+The default Tone in the Roman books is very similar.
+
+\medskip
+
+
+Tonus usurpatur pro Psalmis qui dicendi praescibuntur in Precibus Officii sine Antiphona: ut sunt Ps.~145 in Vesperis pro Defunctis, et Ps.~129 in Laudibus; Ps.~69 in Litaniis Sanctorum, etc.
+
+\section{Psalm 128}
+
+\gresetinitiallines0
+\gregorioscore{psalms/128v1-roman}
+
+\input psalms/128vv-roman
+
+\section*{Psalm 129}
+\gregorioscore{psalms/129v1-roman}
+
+\input psalms/129vv-roman
+
+\section*{Psalm 130}
+\gregorioscore{psalms/130v1-roman}
+
+\input psalms/130vv-roman
+
+\setcounter{enumi}{0}
+
+
+\chapter{In Octava Pascha}
+
+In Easter Week some psalms are sung with this tone which is a variation on Mode 2. This is to match with the elaborate mode 2 antiphon Haec Dies, which is sung after the Canticle.
+
+\medskip
+
+
+Sabbato Sancto ad Completorium pro Psalmis, et in Officio Resurrectionis Domini usque ad Vesperas Sabbati in Albis, pro Psalmis qui ad Horas cantantur sine Antiphona et pro Cantico \emph{Nunc dimittis,} potest usurpari Tonus sequens:
+
+\section*{Psalm 128}
+
+\gregorioscore{psalms/128v1-pascha}
+
+\input psalms/128vv-pascha
+
+
+\section*{Psalm 129}
+
+\gregorioscore{psalms/129v1-pascha}
+
+
+\input psalms/129vv-pascha
+
+
+\section*{Psalm 130}
+
+
+\gregorioscore{psalms/130v1-pascha}
+
+\input psalms/130vv-pascha
+
+
+\chapter{In Commemorationem Omnium Fidelium Defunctorum Ad Lib}
+
+The earlier Tonus in Directum is the default tone for the Commemoration of All Souls. The next tone is given as a suggested variation or \emph{tonus ad libitum.}
+
+\medskip
+
+In Commemoratione Omnium Fidelium Defunctorum, Psalmi ad Completorium, Primam, Tertiam, Sextam et Nonam, cantantur in Tono in directum ut supra, \pageref{t-i-d} vel ad libitum in tono sequenti:
+
+\section*{Psalm 128}
+
+\gregorioscore{psalms/128v1-defunctorum}
+
+\input psalms/128vv-defunctorum
+
+\section*{Psalm 129}
+
+\gregorioscore{psalms/129v1-defunctorum}
+
+
+\input psalms/129vv-defunctorum
+
+
+\section*{Psalm 130}
+
+
+\gregorioscore{psalms/130v1-defunctorum}
+
+\input psalms/130vv-defunctorum
+
+
+
+\end{document}

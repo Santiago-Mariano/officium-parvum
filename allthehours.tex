@@ -1,0 +1,211 @@
+\documentclass[12pt,a5paper,openany]{memoir}
+\input stdsetup
+
+
+\nouppercaseheads
+\makepagestyle{mystyle}
+\setlength{\headwidth}{\dimexpr\textwidth+\marginparsep+\marginparwidth\relax}
+\makerunningwidth{mystyle}{\headwidth}
+\makeatletter
+\makepsmarks{mystyle}{%
+\createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
+\createmark{part}{left}{nonumber}{}{}
+%\createmark{part}{right}{shownumber}{}{. \space}
+%\createmark{section}{left}{nonumber}{}{}
+}
+\makeatother
+
+\makeevenhead{mystyle}{\itshape\leftmark}{}{}
+\makeoddhead{mystyle}{}{}{\itshape\rightmark}
+\makeevenfoot{mystyle}{\thepage}{}{}
+\makeoddfoot{mystyle}{}{}{\thepage}
+\makepagestyle{plain}
+\makerunningwidth{plain}{\headwidth}
+\makeevenfoot{plain}{\thepage}{}{}
+\makeoddfoot{plain}{}{}{\thepage}
+
+\pagestyle{mystyle}
+
+\renewcommand{\sectionmark}[1]{}
+\renewcommand{\subsectionmark}[1]{}
+
+\begin{document}
+
+\mytitle{Officium Parvum}{All the Hours}
+
+\tableofcontents*
+
+\chapter{Prayers Before the Office}
+
+\startParallel
+Áperi Dómine, os meum ad benedicéndum nomen sanctum tuum: munda quoque cor meum ab ómnibus vanis, pervérsis et aliénis cogitatiónibus; intelléctum illúmina, afféctum inflámma, ut digne, atténte ac devóte hoc Offícium recitáre váleam, et exaudíri mérear ante conspéctum divínæ Majestátis túæ. Per Christum Dóminum nostrum.
+
+\Rbar. Amen.
+
+\switchcolumn
+
+\selectlanguage{british}
+\tr{O Lord, open Thou my mouth, that it may bless Thy holy name; cleanse my heart, too, from all vain, evil, or wandering thoughts. Enlighten mine understanding, kindle mine affections, that I may be able to say this Office meetly with attention and devotion and may deserve to be heard before the presence of Thy divine Majesty. Through Christ our Lord.}
+
+\tr{\Rbar. Amen.}
+
+\switchcolumn*
+
+\selectlanguage{latin}
+Dómine, in unióne illíus divínæ intentiónis, qua ipse in terris laudes Deo persolvísti, has tibi Horas (vel hanc tibi Horam) persólvo.
+\switchcolumn
+\selectlanguage{british}
+\tr{O Lord, in union with that divine intention wherewith Thou Thyself, while on earth, didst offer praises unto God, I offer these Hours unto Thee.}
+\stopParallel
+
+\part{Matutinum}
+
+\input mid-matins
+
+\part{Laudes}
+
+\input mid-laudes
+
+\rubrics{It is commendable to finish a public recitation of the Little Office with appropriate Marian Antiphon, page \pageref{marian-ants}.}
+
+\part{Prima}
+
+\deusinadjref
+
+\input mid-prima
+
+\rubrics{It is commendable to finish a public recitation of the Little Office with appropriate Marian Antiphon, page \pageref{marian-ants}.}
+
+\part{Tertia}
+
+\deusinadjref
+
+\input mid-terce
+
+\rubrics{It is commendable to finish a public recitation of the Little Office with appropriate Marian Antiphon, page \pageref{marian-ants}.}
+
+\part{Sexta}
+
+\deusinadjref
+
+\input mid-sext
+
+\rubrics{It is commendable to finish a public recitation of the Little Office with appropriate Marian Antiphon, page \pageref{marian-ants}.}
+
+\part{Nona}
+
+\deusinadjref
+
+\input mid-none
+
+\rubrics{It is commendable to finish a public recitation of the Little Office with appropriate Marian Antiphon, page \pageref{marian-ants}.}
+
+\part{Vesperae}
+
+Deus in adjutorium as at the beginning of Lauds, page \pageref{deus-memento}
+
+\startParallel
+\latin{Deus in adjutórium meum intende.}
+\vern{O God, come to my assistance.}
+
+\latin{Dómine, ad adjuvándum me festína.}
+\vern{O Lord, make haste to help me.}
+
+\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
+\vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
+\stopParallel
+
+\input mid-vespers
+
+\rubrics{It is commendable to finish a public recitation of the Little Office with appropriate Marian Antiphon, page \pageref{marian-ants}.}
+
+\part{Completorium}
+
+%\renewcommand{\latin}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1\switchcolumn\selectlanguage{british}}
+%\renewcommand{\vern}[1]{\tr{#1}\switchcolumn}
+
+
+\input mid-compline
+
+\rubrics{Compline always finishes with the Marian Antiphon of the season, page \pageref{marian-ants}.}
+
+\chapter{Marian Antiphon}
+
+\label{marian-ants}
+\input marianantiphon
+
+
+\chapter{Prayers After the Office}
+
+\selectlanguage{latin}
+\startParallel
+Sacrosánctæ et indivíduæ Trinitáti, crucifíxi Dómini nostri Jesu Christi humanitáti, beatíssimæ et gloriosíssimæ sempérque Vírginis Maríæ fœcúndæ integritáti, et ómnium Sanctórum universitáti sit sempitérna laus, honor, virtus et glória ab omni creatúra, nobísque remíssio ómnium peccatórum, per infiníta sǽcula sæculórum.
+
+\Rbar. Amen.
+
+\switchcolumn
+\selectlanguage{british}
+\tr{To the most holy and undivided Trinity, to the manhood of our crucified Lord Jesus Christ, to the fruitful virginity of the most blessed and glorious Mary, ever a virgin, to the entire assembly of the saints, be ascribed everlasting praise, honor, power, and glory, by every creature; and to us be granted the remission of all our sins, world without end.
+
+\Rbar. Amen.}
+
+\switchcolumn*
+
+
+\Vbar. Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Pátris Fílium.
+
+\Rbar. Et beáta úbera, quæ lactavérunt Christum Dóminum.
+
+\switchcolumn
+
+\selectlanguage{british}
+\tr{\Vbar. Blessed is the Virgin Mary's womb, which bore the Son of the everlasting Father.
+
+\Rbar. And blessed are the breasts which nourished Christ our Lord.}
+
+
+\switchcolumn*
+\selectlanguage{latin}
+
+Pater, Ave, and Credo, in silence.
+
+\switchcolumn
+
+\selectlanguage{british}
+\tr{Our Father, Hail Mary and I Believe, in silence.}
+
+\switchcolumn*
+
+\selectlanguage{latin}
+Pater noster, qui es in cælis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cælo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris: et ne nos indúcas in tentatiónem: sed líbera nos a malo. Amen.
+
+\switchcolumn
+
+\selectlanguage{british}
+\tr{Our Father, who art in heaven, Hallowed be thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation: But deliver us from evil. Amen.}
+
+\switchcolumn*
+
+\selectlanguage{latin}
+Ave María, grátia plena; Dóminus tecum: benedícta tu in muliéribus, et benedíctus fructus ventris tui Jesus. Sancta María, Mater Dei, ora pro nobis peccatóribus, nunc et in hora mortis nostræ. Amen.
+
+
+\switchcolumn
+
+\selectlanguage{british}
+\tr{Hail Mary, full of grace; The Lord is with thee; Blessed art thou amongst women, And blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, Pray for us sinners, now and at the hour of our death. Amen.}
+
+\switchcolumn*
+
+\selectlanguage{latin}
+Credo in Deum, Patrem omnipoténtem, Creatórem cæli et terræ. Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad cælos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam cathólicam, Sanctórum communiónem, remissiónem peccatórum, carnis resurrectiónem, vitam ætérnam. Amen.
+\switchcolumn
+
+\selectlanguage{british}
+\tr{I believe in God, the Father almighty, Creator of heaven and earth. And in Jesus Christ, his only Son, our Lord; who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried: he descended into hell; the third day he arose again from the dead; he ascended into heaven; sitteth at the right hand of God the Father almighty: from thence he shall come to judge the living and the dead. I believe in the Holy Ghost, the holy catholic Church, the communion of Saints, the forgiveness of sins. The resurrection of the body. And life everlasting. Amen.}
+
+\stopParallel
+
+
+\end{document}
+

@@ -1,0 +1,93 @@
+\documentclass[a5paper, 12pt]{memoir}
+\usepackage[autocompile]{gregoriotex}
+\usepackage{fontspec}
+\usepackage[latin]{babel}
+\defaultfontfeatures{Ligatures=TeX}
+%\setsansfont{Quercus}
+\setmainfont[BoldFont = Calluna Black]{Calluna}
+\newfontface{\justbold}{Calluna Bold}
+%
+\setsecheadstyle{\Large\justbold\raggedright}
+\setsubsecheadstyle{\large\justbold\raggedright}
+\renewcommand\cftchapterfont{\justbold}
+\setlength{\trimtop}{0pt}
+\setlength{\trimedge}{0pt}
+\settypeblocksize{170mm}{105mm}{*} % Was 101mm in a5
+\setulmargins{*}{*}{1.4}
+\setlrmargins{*}{*}{1.2}
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{.8\onelineskip}{*}
+\checkandfixthelayout
+
+
+
+
+
+\begin{document}
+\selectlanguage{latin}
+\pagestyle{plain}
+
+Third Nocturn for Matins
+
+Little Office of the Blessed Virgin Mary
+
+\section{First Psalm}
+
+\gregorioscore{gabc/an--gaude_maria_virgo}
+
+\subsection{Psalm 95}
+
+\gregorioscore{gabc/95-4c}
+
+\input psalms/95-4c
+
+\gregorioscore{gabc/an--gaude_maria_virgo}
+
+\newpage
+
+\section{Second Psalm}
+
+\gregorioscore{gabc/an--dignare_me}
+
+\subsection{Psalm 96}
+
+\gregorioscore{gabc/96-4c}
+
+\input psalms/96-4c
+
+\gregorioscore{gabc/an--dignare_me}
+
+
+\newpage
+
+\section{Third Psalm}
+
+Most of the time this is the way we sing this one, however, in Advent and on the feast of the Annunciation we sing the same psalm, but with a different antiphon and tune. See page \pageref{noc3ps3adv}.
+
+\gregorioscore{gabc/an--post_partum}
+
+\subsection{Psalm 97}
+
+\gregorioscore{gabc/97-4Astar}
+
+\input psalms/97-4Astar
+
+\gregorioscore{gabc/an--post_partum}
+
+\newpage
+
+\label{noc3ps3adv}
+Here is how the third Psalm in the third Nocturn is sung in Advent or on the feast of the Annunciation:
+
+\gregorioscore{gabc/an--angelus_domini_nuntiavit_(ant.)--vatican}
+
+\subsection{Psalm 97}
+
+\gregorioscore{gabc/97-1f}
+
+\input psalms/97-1f
+
+\gregorioscore{gabc/an--angelus_domini_nuntiavit_(ant.)--vatican}
+
+\end{document}
+

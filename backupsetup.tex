@@ -1,0 +1,31 @@
+\usepackage[english, latin]{babel}
+\usepackage[autocompile]{gregoriotex}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+%\setsansfont{Quercus}
+%\setmainfont[AutoFakeBold]{Norlik}
+%\fontspec[AutoFakeBold=1.5]{Norlik}
+%
+\setmainfont[BoldFont=Calluna Black]{Calluna}
+\usepackage{parallel}
+
+\newcommand{\rubrics}[1]{\noindent\textit{#1}}
+
+\newcommand{\rubricswref}[2]{\noindent\textit{#1} \hfill #2}
+
+\newdimen\temp 
+\def\twocolspace#1{%
+\temp=#1%
+\advance\temp by 1mm%
+%\twoCols{\ \vspace{\temp}}{\ \vspace{\temp}}%
+\vspace*{\temp}\twoCols{\ }{\ }%
+\kern -1mm%
+\relax %
+}\newcommand{\twoCols}[2]{{\selectlanguage{latin}\ParallelLText{#1}}\selectlanguage{english}\ParallelRText{#2}\ParallelPar}
+
+\newcommand{\setupParallel}{\begin{Parallel}{0.48\textwidth}{0.48\textwidth}}
+%{\begin{Parallel}[v]{0.47\textwidth}{0.47\textwidth}}
+\newcommand{\psalmverse}[2]{{{\selectlanguage{latin}\ParallelLText{#1}}\selectlanguage{english}\ParallelRText{#2}\ParallelPar}\twocolspace{-2.9mm}}%%-3.4mm
+\newcommand{\psalmverselast}[2]{{{\selectlanguage{latin}\ParallelLText{#1}}\selectlanguage{english}\ParallelRText{#2}\ParallelPar}}%%-3.4mm
+
+
