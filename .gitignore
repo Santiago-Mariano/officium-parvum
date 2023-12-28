@@ -1,3 +1,4 @@
 *.log
 *.glog
 *.pdf
+!by.pdf
