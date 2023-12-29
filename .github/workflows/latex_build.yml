@@ -16,6 +16,9 @@ jobs:
         cp fonts/LinBiolinum_R.otf ~/.fonts/
         fc-cache -fv
 
+    - name: List available fonts
+      run: fc-list : file family style
+
     - name: Set up TeX Live
       uses: xu-cheng/latex-action@v2
       with:
