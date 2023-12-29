@@ -13,6 +13,7 @@ jobs:
       run: |
         mkdir -p ~/.fonts
         cp fonts/Scribish.ttf ~/.fonts/
+        cp fonts/LinBiolinum_R.otf ~/.fonts/
         fc-cache -fv
 
     - name: Set up TeX Live
