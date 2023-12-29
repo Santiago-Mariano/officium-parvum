@@ -13,7 +13,7 @@ jobs:
       run: |
         mkdir -p ~/.fonts
         cp fonts/Scribish.ttf ~/.fonts/
-        cp fonts/LinBiolinum_R.otf ~/.fonts/
+        cp fonts/LinBiolinumR.otf ~/.fonts/
         fc-cache -fv
 
     - name: List available fonts
