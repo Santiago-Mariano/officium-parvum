@@ -1,4 +1,7 @@
 *.log
 *.glog
 *.pdf
+*.aux
+*.gaux
+*.toc
 !by.pdf
