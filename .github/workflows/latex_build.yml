@@ -15,7 +15,7 @@ jobs:
         latexmk_shell_escape: yes
 
     - name: Compile LaTeX Document
-      run: lualatex your-document.tex
+      run: lualatex ./officium-parvum.tex
 
     - name: Upload PDF
       uses: actions/upload-artifact@v2
