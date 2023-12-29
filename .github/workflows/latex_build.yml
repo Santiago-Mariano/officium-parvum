@@ -1,0 +1,23 @@
+name: Compile LaTeX Document
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up TeX Live
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: oficio-parvo.tex
+        latexmk_shell_escape: yes
+        latexmk_use_lualatex: yes
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v2
+      with:
+        name: Compiled-PDF
+        path: ./oficio-parvo.pdf
