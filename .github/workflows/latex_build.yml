@@ -9,6 +9,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Install custom fonts
+      run: |
+        mkdir -p ~/.fonts
+        cp fonts/Scribish.ttf ~/.fonts/
+        fc-cache -fv
+
     - name: Set up TeX Live
       uses: xu-cheng/latex-action@v2
       with:
