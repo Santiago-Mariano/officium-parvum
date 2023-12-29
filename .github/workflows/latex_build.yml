@@ -1,0 +1,24 @@
+name: Compile LaTeX Document
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up TeX Live
+      uses: xu-cheng/latex-action@v2
+      with:
+        latexmk_shell_escape: yes
+
+    - name: Compile LaTeX Document
+      run: lualatex your-document.tex
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v2
+      with:
+        name: Compiled-PDF
+        path: ./your-document.pdf
