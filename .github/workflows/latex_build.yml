@@ -12,7 +12,7 @@ jobs:
     - name: Install custom fonts
       run: |
         mkdir -p ~/.fonts
-        cp fonts/Scribish.ttf ~/.fonts/
+        cp fonts/*.ttf ~/.fonts/
         fc-cache -fv
 
     - name: List available fonts
