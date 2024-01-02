@@ -19,7 +19,7 @@ jobs:
       run: |
         fc-list : file family style
 
-    - name: Set up TeX Live
+    - name: Compiling PDF using lualatex
       uses: xu-cheng/latex-action@v2
       with:
         root_file: oficio-parvo.tex
