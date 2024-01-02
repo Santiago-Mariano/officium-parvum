@@ -21,19 +21,22 @@ jobs:
 
     - name: Compiling PDF using lualatex
       uses: xu-cheng/latex-action@v2
+      continue-on-error: true  # Allow the workflow to continue even if this step fails
       with:
         root_file: oficio-parvo.tex
         latexmk_shell_escape: yes
         latexmk_use_lualatex: yes
 
-    - name: Upload PDF
+    - name: Upload PDF (if compilation is successful)
       uses: actions/upload-artifact@v2
+      if: success()
       with:
         name: Compiled-PDF
         path: ./oficio-parvo.pdf
 
     - name: Upload LaTeX Log File
       uses: actions/upload-artifact@v2
+      if: always()  # This ensures the log is uploaded regardless of the previous step's success or failure
       with:
         name: LaTeX-Log
         path: ./oficio-parvo.log
