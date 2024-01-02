@@ -31,3 +31,10 @@ jobs:
       with:
         name: Compiled-PDF
         path: ./oficio-parvo.pdf
+
+    - name: Upload LaTeX Log File
+      uses: actions/upload-artifact@v2
+      with:
+        name: LaTeX-Log
+        path: path/to/your/oficio-parvo.log
+        
