@@ -36,5 +36,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: LaTeX-Log
-        path: path/to/your/oficio-parvo.log
-        
+        path: ./oficio-parvo.log
+
