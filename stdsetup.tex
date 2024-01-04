@@ -20,6 +20,11 @@
 \checkandfixthelayout
 \usepackage{graphicx}
 
+\usepackage{xcolor}
+\definecolor{rubricred}{rgb}{0.6, 0, 0} % Define dark
+
+
+
 \tolerance=5000
 \pretolerance=1000
 
@@ -45,7 +50,9 @@
 %\gre@createdim{translationheight}{0.5 cm}{scalable}%
 
 
-\newcommand{\rubrics}[1]{{\textit{#1}}}
+% \newcommand{\rubrics}[1]{{\textit{#1}}}
+\newcommand{\rubrics}[1]{{\textit{\footnotesize\color{rubricred}#1}}}
+
 \newcommand{\rubricswref}[2]{\noindent\textit{#1} \hfill #2}
 %\newcommand{\latin}[1]{#1\par}
 %\newcommand{\vern}[1]{\footnotesize\textit{#1}\par}
