@@ -3,15 +3,17 @@
 
 
 \nouppercaseheads
+
 \makepagestyle{mystyle}
 \setlength{\headwidth}{\dimexpr\textwidth+\marginparsep+\marginparwidth\relax}
 \makerunningwidth{mystyle}{\headwidth}
 \makeatletter
 \makepsmarks{mystyle}{%
-\createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
-% \createmark{part}{left}{nonumber}{}{}
-%\createmark{part}{right}{shownumber}{}{. \space}
-%\createmark{section}{left}{nonumber}{}{}
+    % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
+    % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
+    \createmark{part}{left}{nonumber}{}{}
+    % \createmark{part}{right}{shownumber}{}{. \space}
+    % \createmark{section}{left}{nonumber}{}{}
 }
 \makeatother
 
@@ -19,15 +21,18 @@
 \makeoddhead{mystyle}{}{}{\itshape\rightmark}
 \makeevenfoot{mystyle}{\thepage}{}{}
 \makeoddfoot{mystyle}{}{}{\thepage}
-\makepagestyle{plain}
-\makerunningwidth{plain}{\headwidth}
-\makeevenfoot{plain}{\thepage}{}{}
-\makeoddfoot{plain}{}{}{\thepage}
+
+\renewcommand*{\partname}{}
+% \makepagestyle{plain}
+% \makerunningwidth{plain}{\headwidth}
+% \makeevenfoot{plain}{\thepage}{}{}
+% \makeoddfoot{plain}{}{}{\thepage}
 
 \pagestyle{mystyle}
+% \pagestyle{plain}
 
-\renewcommand{\sectionmark}[1]{}
-\renewcommand{\subsectionmark}[1]{}
+% \renewcommand{\sectionmark}[1]{}
+% \renewcommand{\subsectionmark}[1]{}
 
 \begin{document}
 
@@ -63,48 +68,11 @@ Dómine, in unióne illíus divínæ intentiónis, qua ipse in terris laudes Deo
 \part{Maitines (Matutinum)}
 
 
-\input mid-matins
+% \input mid-matins
 
-% \part{Laudes}
-
-% \input mid-laudes
 
 \rubrics{Es recomendable finalizar la recitación pública del Pequeño Oficio con la correspondiente Antífona Mariana, página \pageref{marian-ants}.}
 
-% \end{document}
-
-
-% \part{Prima}
-
-% \deusinadjref
-
-% \input mid-prima
-
-% \rubrics{Es recomendable finalizar la recitación pública del Pequeño Oficio con la correspondiente Antífona Mariana, página \pageref{marian-ants}.}
-
-% \part{Tertia}
-
-% \deusinadjref
-
-% \input mid-terce
-
-% \rubrics{Es recomendable finalizar la recitación pública del Pequeño Oficio con la correspondiente Antífona Mariana, página \pageref{marian-ants}.}
-
-% \part{Sexta}
-
-% \deusinadjref
-
-% \input mid-sext
-
-% \rubrics{Es recomendable finalizar la recitación pública del Pequeño Oficio con la correspondiente Antífona Mariana, página \pageref{marian-ants}.}
-
-% \part{Nona}
-
-% \deusinadjref
-
-% \input mid-none
-
-% \rubrics{Es recomendable finalizar la recitación pública del Pequeño Oficio con la correspondiente Antífona Mariana, página \pageref{marian-ants}.}
 
 \part{Vísperas (Vesperae)}
 
@@ -119,17 +87,14 @@ Dómine, in unióne illíus divínæ intentiónis, qua ipse in terris laudes Deo
 \vern{Gloria al Padre,  al Hijo y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amen.}
 \stopParallel
 
-\input mid-vespers
+% \input mid-vespers
 
 \rubrics{Es recomendable finalizar la recitación pública del Pequeño Oficio con la correspondiente Antífona Mariana, página \pageref{marian-ants}.}
 
 \part{Completas (Completorium)}
 
-%\renewcommand{\latin}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1\switchcolumn\selectlanguage{spanish}}
-%\renewcommand{\vern}[1]{\tr{#1}\switchcolumn}
 
-
-\input mid-compline
+% \input mid-compline
 
 \rubrics{La Hora de las Completas siempre concluye con la Antífona Mariana correspondiente, página \pageref{marian-ants}.}
 
