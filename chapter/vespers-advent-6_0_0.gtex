@@ -5,7 +5,7 @@
 \GreHeader{name}{Little Chapter Vespers in Advent}%
 \GreHeader{centering-scheme}{latin}%
 \GreEndHeaders %
-\GreBeginScore{5a82eeed063d860fa0129550f93cf1d39dece555}{10}{7}{0}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
+\GreBeginScore{6a7cfd94f8f0cc57e5bd784ad0385032f9e0c42b}{10}{7}{0}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
 \GreSetLargestClef{c}{3}{3}{c}{0}{3}%
 \GreScoreOpening{%
 }{%
@@ -315,12 +315,12 @@
 }{}%
 }%
 %
-\GreBarSyllable{\GreSetThisSyllable{}{}{}{}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{\GreSpecial{\string\092Rbar} D}{e}{}{\GreSpecial{\string\092Rbar}}{ De}}{}{{0}{0}}{}{%
+\GreBarSyllable{\GreSetThisSyllable{}{}{}{}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{\GreSpecial{\string\092response} D}{e}{}{\GreSpecial{\string\092response}}{ De}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{0}%
 \GreDivisioFinalis{0}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{\GreSpecial{\string\092Rbar} D}{e}{}{\GreSpecial{\string\092Rbar}}{ De}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{}{o}{}{o}{}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{\GreSpecial{\string\092response} D}{e}{}{\GreSpecial{\string\092response}}{ De}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{}{o}{}{o}{}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%

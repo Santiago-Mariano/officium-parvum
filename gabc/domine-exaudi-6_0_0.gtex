@@ -4,7 +4,7 @@
 \GreBeginHeaders %
 \GreHeader{name}{Domine exaudi solemn tone}%
 \GreEndHeaders %
-\GreBeginScore{35b784faef2cc1d3fecb30b37fa0c6c15900743b}{10}{9}{1}{0}{}{4}{\GreInitialClefPosition{4}{0}}%
+\GreBeginScore{4502831e7be9837974a7d4a9ef2c970754819804}{10}{9}{1}{0}{}{4}{\GreInitialClefPosition{4}{0}}%
 \GreSetLargestClef{c}{4}{3}{c}{0}{3}%
 \GreScoreOpening{%
 }{%
@@ -119,7 +119,7 @@
 \GreNewParLine %
 %
 %
-\GreSyllable{\GreSetThisSyllable{\Rbar  }{E}{t}{\Rbar }{ Et}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{cl}{a}{}{c}{la}}{}{{0}{0}}{%
+\GreSyllable{\GreSetThisSyllable{\response  }{E}{t}{\response }{ Et}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{cl}{a}{}{c}{la}}{}{{0}{0}}{%
 \GreWriteTranslation{And let my cry come unto Thee.}%
 }{%
 \GreSyllableNoteCount{1}%
