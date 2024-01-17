@@ -8,7 +8,7 @@
 \GreHeader{transcriber}{Mateusz Ciesiółka}%
 \GreHeader{commentary}{AR3*}%
 \GreEndHeaders %
-\GreBeginScore{2d002b2d4351582a6bc528d1fff1737e824c7635}{12}{11}{1}{0}{}{4}{\GreInitialClefPosition{4}{0}}%
+\GreBeginScore{4c773673aff41d113c459217c7e8af407a609cf9}{12}{11}{1}{0}{}{4}{\GreInitialClefPosition{4}{0}}%
 \GreSetLargestClef{c}{4}{3}{c}{0}{3}%
 \GreScoreOpening{%
 }{%
@@ -112,7 +112,7 @@
 }%
 %
 \GreSyllable{\GreSetThisSyllable{\GreSpecial{\string\092response } }{E}{t}{\GreSpecial{\string\092response }}{ Et}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{o}{s}{o}{s}}{}{{0}{0}}{%
-\GreWriteTranslation{y mi}%
+\GreWriteTranslation{R./ Y mi}%
 }{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{12}{\GreNextCustos{12}{}}{0}%
