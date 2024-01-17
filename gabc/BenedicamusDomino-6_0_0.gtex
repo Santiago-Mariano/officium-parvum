@@ -4,14 +4,14 @@
 \GreBeginHeaders %
 \GreHeader{name}{Benedicamus Domino}%
 \GreEndHeaders %
-\GreBeginScore{73a879a968a67236d8aac3b6e02de662431dcbd3}{11}{9}{1}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
+\GreBeginScore{8aaaa815fdeb2b7cf15e11cff374074898c4ce9c}{11}{9}{1}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
 \GreSetLargestClef{c}{3}{3}{c}{0}{3}%
 \GreScoreOpening{%
 }{%
 \GreSetInitialClef{c}{3}{3}{c}{0}{3}{1}%
 }{%
 }{\GreSyllable}{\GreSetFirstSyllableText{\GreSpecial{V/}}{ }{Be}{{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{ }B}}}{\GreFirstWord{\GreFirstSyllable{e}}}{}}{{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{\GreSpecial{V/}} B}}}{\GreFirstWord{\GreFirstSyllable{e}}}{}}{}}{}{\GreFirstWord}{0}{\GreSetNextSyllable{\GreFirstWord{n}}{\GreFirstWord{e}}{}{\GreFirstWord{n}}{\GreFirstWord{e}}}{}{{0}{0}}{%
-\GreWriteTranslation{Let us bless the Lord.}%
+\GreWriteTranslation{Bendigamos al Señor.}%
 }{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
@@ -87,16 +87,16 @@
 \GreDivisioMinor{0}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{\GreSpecial{R/} D}{e}{}{\GreSpecial{R/}}{ De}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{}{o}{}{o}{}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{\GreSpecial{R/} D}{e}{}{\GreSpecial{R/}}{ De}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{}{o}{}{o}{}}{}{{0}{0}}{%
+\GreWriteTranslation{Demos gracias a Dios.}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{11}{\GreNextCustos{11}{}}{0}%
 {%
 \GreGlyphHeights{11}{11}%
 }{}{}%
 }%
-\GreSyllable{\GreSetThisSyllable{}{o}{}{o}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{gr}{á}{}{g}{rá}}{}{{0}{0}}{%
-\GreWriteTranslation{Thanks be to God.}%
-}{%
+\GreSyllable{\GreSetThisSyllable{}{o}{}{o}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{gr}{á}{}{g}{rá}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{11}{\GreNextCustos{11}{}}{0}%
 {%
