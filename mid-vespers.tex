@@ -361,6 +361,7 @@ Melodía del Oficio Parvo (la más simple)
 
 \gregorioscore{gabc/hy--ave_maris_stella--solesmes}
 
+\setcounter{versecount}{0}
 \startParallel
 
 \latin{Ave maris stella,
@@ -428,13 +429,11 @@ Melodía del Oficio Parvo (la más simple)
 	honor igual a los tres.
 	Amén.}
 
-\latin{
-	\versicle Diffúsa est grátia in lábiis tuis.
-	\response Proptérea benedíxit te Deus in ætérnum.}
-\vern{
-	\versicle En tus labios se derrama la gracia.
-	\response El Señor te bendice eternamente.
-}
+\latin{\versicle Diffúsa est grátia in lábiis tuis.}
+\vern{\versicle En tus labios se derrama la gracia.}
+
+\latin{\response Proptérea benedíxit te Deus in ætérnum.}
+\vern{\response El Señor te bendice eternamente.}
 
 \stopParallel
 
@@ -442,14 +441,15 @@ Melodía del Oficio Parvo (la más simple)
 \section{Versículo}
 \label{vespers-versicle}
 
+\setcounter{versecount}{0}
 \startParallel
-\versicle Diffúsa est grátia in lábiis tuis.
 
-\response Proptérea benedíxit te Deus in aetérnum.
-\switchcolumn
-\tr{En tus labios se derrama la gracia
+\latin{\versicle Diffúsa est grátia in lábiis tuis.}
+\vern{\versicle En tus labios se derrama la gracia.}
 
-	Por eso Dios te ha bendecido eternamente}
+\latin{\response Proptérea benedíxit te Deus in ætérnum.}
+\vern{\response El Señor te bendice eternamente.}
+
 \stopParallel
 
 
@@ -533,41 +533,106 @@ Melodía del Oficio Parvo (la más simple)
 
 \section{Collecta Per Annum}
 
-Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
-Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.
 
-R. Amen.
+\setcounter{versecount}{0}
+\startParallel
+\latin{
+	Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
+}
+\vern{Te pedimos, Señor, que nosotros, tus siervos, gocemos siempre de salud de alma y cuerpo; y, por la intercesión gloriosa de Santa María, la Virgen, líbranos de las tristezas de este mundo, y concédenos las alegrías del cielo.}
 
-\section{Collect for Advent}
-
-Deus, qui de beátae Maríae Vírginis útero Verbum tuum, Angelo nuntiánte, carnem suscípere voluísti: praesta supplícibus tuis; ut, qui vere eam Genitrícem Dei crédimus, ejus apud te intercessiónibus adjuvémur.
-Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
-
-\response Amen.
+\latin{
+	Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.}
+\vern{Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo, Dios, por todos los siglos de los siglos.}
 
 
-\section{Collect for Christmas}
+\latin{\response Amen.}
+\vern{\response Amén.}
 
-Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fecúnda, humáno géneri prǽmia præstitísti: tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Jesum Christum Fílium tuum:
-Qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+\stopParallel
 
-\response Amen.
+
+\section{Colecta para Adviento}
+
+\setcounter{versecount}{0}
+\startParallel
+\latin{
+	Deus, qui de beátae Maríae Vírginis útero Verbum tuum, Angelo nuntiánte, carnem suscípere voluísti: praesta supplícibus tuis; ut, qui vere eam Genitrícem Dei crédimus, ejus apud te intercessiónibus adjuvémur.
+}
+\vern{Dios, que quisiste que a la palabra del Ángel se encarnase tu Verbo en el seno de la bienaventurada Virgen María: haz, te suplicamos, que cuantos creemos que es verdaderamente Madre de Dios, seamos ayudados delante de ti con su intercesión.
+}
+
+\latin{
+	Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+}
+\vern{Por el mismo Señor Nuestro Jesucristo, tu Hijo, que vive y reina en la unidad del Espíritu Santo, Dios, por todos los siglos de los siglos.}
+
+\latin{\response Amen.}
+\vern{\response Amén.}
+
+\stopParallel
+
+
+\section{Colecta para Navidad}
+
+\setcounter{versecount}{0}
+\startParallel
+\latin{
+	Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fecúnda, humáno géneri prǽmia præstitísti: tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, per  merúimus auctórem vitæ suscípere, Dóminum nostrum Jesum Christum Fílium tuum:
+}
+\vern{Oh Dios, que por la maternidad virginal de santa María entregaste al género humano los tesoros de la salvación eterna!, concédenos la intercesión de la Madre de nuestro Redentor.
+}
+
+\latin{
+	Qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+}
+\vern{
+	Que vive y reina en unión del Espíritu Santo, Dios, por todos los siglos de los siglos.
+}
+
+\latin{\response Amen.}
+\vern{\response Amén.}
+
+\stopParallel
 
 
 \section{Conclusio}
 
-V. Dómine, exáudi oratiónem meam.
 
-R. Et clamor meus ad te véniat.
+\setcounter{versecount}{1}
+\startParallel
 
+\latin{\versicle Dómine, exáudi oratiónem meam.}
+\vern{\versicle Señor, escucha nuestra oración.}
+
+\latin{\response Et clamor meus ad te véniat.}
+\vern{\response Y llegue a ti nuestro clamor.}
+\stopParallel
+
+% V. Dómine, exáudi oratiónem meam.
+
+% R. Et clamor meus ad te véniat.
+
+
+\gresetinitiallines0
 \gregorioscore{gabc/or--benedicamus_domino_(in_festis_beatae_mariae_virginis)--sandhofe}
-
+\gresetinitiallines1
 %	V. Benedicámus Dómino.
 
 %	R. Deo grátias.
 
-V. Fidélium ánimæ per misericórdiam Dei requiéscant in pace.
+% V. Fidélium ánimæ per misericórdiam Dei requiéscant in pace.
 
-R. Amen.
+% R. Amen.
+
+\setcounter{versecount}{1}
+\startParallel
+
+\latin{\versicle Fidélium ánimæ per misericórdiam Dei requiéscant in pace.}
+\vern{\versicle  Las almas de los fieles, por la misericordia de Dios, descansen en paz.}
+
+\latin{\response Amen.}
+\vern{\response Amén.}
+\stopParallel
 
 
