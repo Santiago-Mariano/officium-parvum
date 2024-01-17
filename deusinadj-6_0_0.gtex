@@ -4,7 +4,7 @@
 \GreBeginHeaders %
 \GreHeader{name}{Deus in adjutórium -- Ferial tone}%
 \GreEndHeaders %
-\GreBeginScore{98843ae16b756d9aa05a8fab75e9225a4905b42e}{11}{9}{0}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
+\GreBeginScore{677365483c38798b46c53a7b18d41393da5c23a6}{11}{9}{0}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
 \GreSetLargestClef{c}{3}{3}{c}{0}{3}%
 \GreScoreOpening{%
 }{%
@@ -17,7 +17,7 @@
 \GreGlyphHeights{10}{10}%
 }{}{}%
 }%
-\GreSyllable{\GreSetThisSyllable{}{\GreFirstWord{u}}{\GreFirstWord{s}}{\GreFirstWord{u}}{\GreFirstWord{s}}}{}{\GreFirstWord}{1}{\GreSetNextSyllable{}{\grecross}{}{\grecross}{}}{}{{11}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{\GreFirstWord{u}}{\GreFirstWord{s}}{\GreFirstWord{u}}{\GreFirstWord{s}}}{}{\GreFirstWord}{1}{\GreSetNextSyllable{}{\redgrecross}{}{\redgrecross}{}}{}{{11}{0}}{}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -28,7 +28,7 @@
 }{}%
 }%
 %
-\GreBarSyllable{\GreSetThisSyllable{}{\grecross}{}{\grecross}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{i}{n}{i}{n}}{}{{0}{0}}{}{%
+\GreBarSyllable{\GreSetThisSyllable{}{\redgrecross}{}{\redgrecross}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{i}{n}{i}{n}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{0}%
 \GreDivisioMinima{1}{}{0}%
 }%
@@ -109,7 +109,7 @@
 \GreGlyphHeights{9}{9}%
 }{}{}%
 }%
-\GreSyllable{\GreSetThisSyllable{d}{e}{\GreProtrusion{\GreProtrusionFactor{period}}{.}}{d}{e\GreProtrusion{\GreProtrusionFactor{period}}{.}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{\gothRbar}{}{\gothRbar}{}}{}{{17}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{d}{e}{\GreProtrusion{\GreProtrusionFactor{period}}{.}}{d}{e\GreProtrusion{\GreProtrusionFactor{period}}{.}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{\response}{}{\response}{}}{}{{17}{0}}{}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -119,7 +119,7 @@
 }{}%
 }%
 %
-\GreBarSyllable{\GreSetThisSyllable{}{\gothRbar}{}{\gothRbar}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{D}{ó}{}{D}{ó}}{}{{0}{0}}{}{%
+\GreBarSyllable{\GreSetThisSyllable{}{\response}{}{\response}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{D}{ó}{}{D}{ó}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{0}%
 \GreDivisioFinalis{1}{}%
 }%
