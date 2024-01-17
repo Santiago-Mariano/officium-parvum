@@ -5,4 +5,5 @@
 *.gaux
 *.toc
 *.fls
+*.fdb_latexmk
 !by.pdf

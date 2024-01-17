@@ -1,0 +1,44 @@
+\documentclass[12pt,a5paper,openany]{memoir}
+\input stdsetup
+
+
+\nouppercaseheads
+
+\makepagestyle{mystyle}
+\setlength{\headwidth}{\dimexpr\textwidth+\marginparsep+\marginparwidth\relax}
+\makerunningwidth{mystyle}{\headwidth}
+\makeatletter
+\makepsmarks{mystyle}{%
+    % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
+    % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
+    \createmark{part}{left}{nonumber}{}{}
+    % \createmark{part}{right}{shownumber}{}{. \space}
+    % \createmark{section}{left}{nonumber}{}{}
+}
+\makeatother
+
+\makeevenhead{mystyle}{\itshape\leftmark}{}{}
+\makeoddhead{mystyle}{}{}{\itshape\rightmark}
+\makeevenfoot{mystyle}{\thepage}{}{}
+\makeoddfoot{mystyle}{}{}{\thepage}
+
+\renewcommand*{\partname}{}
+% \makepagestyle{plain}
+% \makerunningwidth{plain}{\headwidth}
+% \makeevenfoot{plain}{\thepage}{}{}
+% \makeoddfoot{plain}{}{}{\thepage}
+
+\pagestyle{mystyle}
+% \pagestyle{plain}
+
+% \renewcommand{\sectionmark}[1]{}
+% \renewcommand{\subsectionmark}[1]{}
+
+\begin{document}
+
+\gregorioscore{gabc/an--just-domine-labia-mea-esp}
+
+
+
+\end{document}
+
