@@ -6,14 +6,16 @@
 \GreHeader{office-part}{Antiphon}%
 \GreHeader{mode}{4}%
 \GreEndHeaders %
-\GreBeginScore{6a126ed723972c0d195312d989c9b646a61fdb25}{12}{6}{0}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
+\GreBeginScore{ceb1095d119d877c0795f4cefd886168352b35c0}{12}{6}{1}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
 \GreMode{\GreModeNumber{4}}{}{}%
 \GreSetLargestClef{c}{3}{3}{c}{0}{3}%
 \GreScoreOpening{%
 }{%
 \GreSetInitialClef{c}{3}{3}{c}{0}{3}{1}%
 }{%
-}{\GreSyllable}{\GreSetFirstSyllableText{B}{E}{}{{}{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{E}}}}{}}{{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{B}}}}{\GreFirstWord{\GreFirstSyllable{E}}}{}}{}}{}{\GreFirstWord}{0}{\GreSetNextSyllable{\GreFirstWord{n}}{\GreFirstWord{e}}{}{\GreFirstWord{n}}{\GreFirstWord{e}}}{}{{0}{0}}{}{%
+}{\GreSyllable}{\GreSetFirstSyllableText{B}{E}{}{{}{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{E}}}}{}}{{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{B}}}}{\GreFirstWord{\GreFirstSyllable{E}}}{}}{}}{}{\GreFirstWord}{0}{\GreSetNextSyllable{\GreFirstWord{n}}{\GreFirstWord{e}}{}{\GreFirstWord{n}}{\GreFirstWord{e}}}{}{{0}{0}}{%
+\GreWriteTranslation{Bendita tú eres entre todas las mujeres y bendito es el fruto de tu vientre.}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{7}{\GreNextCustos{8}{}}{0}%
 {%

@@ -8,14 +8,16 @@
 \GreHeader{user-notes}{Psalm 8.}%
 \GreHeader{centering-scheme}{latin}%
 \GreEndHeaders %
-\GreBeginScore{70e710e29f1fbd97f9296187de96516f7051e7bd}{12}{8}{0}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
+\GreBeginScore{3108d44208eb5ae5e546cb818198c5099941c105}{12}{8}{1}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
 \GreAnnotationLines{4.A}{}%
 \GreSetLargestClef{c}{3}{3}{c}{0}{3}%
 \GreScoreOpening{%
 }{%
 \GreSetInitialClef{c}{3}{3}{c}{0}{3}{1}%
 }{%
-}{\GreSyllable}{\GreSetFirstSyllableText{D}{ó}{}{{}{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{ó}}}}{}}{{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{D}}}}{\GreFirstWord{\GreFirstSyllable{ó}}}{}}{}}{}{\GreFirstWord}{0}{\GreSetNextSyllable{\GreFirstWord{m}}{\GreFirstWord{i}}{}{\GreFirstWord{m}}{\GreFirstWord{i}}}{}{{0}{0}}{}{%
+}{\GreSyllable}{\GreSetFirstSyllableText{D}{ó}{}{{}{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{ó}}}}{}}{{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{D}}}}{\GreFirstWord{\GreFirstSyllable{ó}}}{}}{}}{}{\GreFirstWord}{0}{\GreSetNextSyllable{\GreFirstWord{m}}{\GreFirstWord{i}}{}{\GreFirstWord{m}}{\GreFirstWord{i}}}{}{{0}{0}}{%
+\GreWriteTranslation{Señor, Señor nuestro,}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{11}{\GreNextCustos{10}{}}{0}%
 {%
@@ -86,7 +88,9 @@
 \GreDivisioMaior{1}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{qu}{a}{m}{q}{uam}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{a}{d}{a}{d}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{qu}{a}{m}{q}{uam}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{a}{d}{a}{d}}{}{{0}{0}}{%
+\GreWriteTranslation{qué admirable es tu nombre en toda la tierra.}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{11}{\GreNextCustos{11}{}}{0}%
 {%
