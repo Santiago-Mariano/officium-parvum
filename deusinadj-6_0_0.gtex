@@ -4,13 +4,15 @@
 \GreBeginHeaders %
 \GreHeader{name}{Deus in adjutórium -- Ferial tone}%
 \GreEndHeaders %
-\GreBeginScore{677365483c38798b46c53a7b18d41393da5c23a6}{11}{9}{0}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
+\GreBeginScore{4ffbfcbf98888f743658394fa1aa1384fe38c858}{11}{9}{1}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
 \GreSetLargestClef{c}{3}{3}{c}{0}{3}%
 \GreScoreOpening{%
 }{%
 \GreSetInitialClef{c}{3}{3}{c}{0}{3}{1}%
 }{%
-}{\GreSyllable}{\GreSetFirstSyllableText{D}{E}{}{{}{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{E}}}}{}}{{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{D}}}}{\GreFirstWord{\GreFirstSyllable{E}}}{}}{}}{}{\GreFirstWord}{0}{\GreSetNextSyllable{}{\GreFirstWord{u}}{\GreFirstWord{s}}{\GreFirstWord{u}}{\GreFirstWord{s}}}{}{{0}{0}}{}{%
+}{\GreSyllable}{\GreSetFirstSyllableText{D}{E}{}{{}{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{E}}}}{}}{{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{D}}}}{\GreFirstWord{\GreFirstSyllable{E}}}{}}{}}{}{\GreFirstWord}{0}{\GreSetNextSyllable{}{\GreFirstWord{u}}{\GreFirstWord{s}}{\GreFirstWord{u}}{\GreFirstWord{s}}}{}{{0}{0}}{%
+\GreWriteTranslation{Dios mío,}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -41,7 +43,9 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{}{a}{d}{a}{d}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{j}{u}{}{j}{u}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{a}{d}{a}{d}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{j}{u}{}{j}{u}}{}{{0}{0}}{%
+\GreWriteTranslation{ven en mi auxilio}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -109,7 +113,7 @@
 \GreGlyphHeights{9}{9}%
 }{}{}%
 }%
-\GreSyllable{\GreSetThisSyllable{d}{e}{\GreProtrusion{\GreProtrusionFactor{period}}{.}}{d}{e\GreProtrusion{\GreProtrusionFactor{period}}{.}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{\response}{}{\response}{}}{}{{17}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{d}{e}{\GreProtrusion{\GreProtrusionFactor{period}}{.}}{d}{e\GreProtrusion{\GreProtrusionFactor{period}}{.}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{}{}{}{}}{}{{17}{0}}{}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -119,12 +123,14 @@
 }{}%
 }%
 %
-\GreBarSyllable{\GreSetThisSyllable{}{\response}{}{\response}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{D}{ó}{}{D}{ó}}{}{{0}{0}}{}{%
+\GreBarSyllable{\GreSetThisSyllable{}{}{}{}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{\response D}{ó}{}{\response }{Dó}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{0}%
-\GreDivisioFinalis{1}{}%
+\GreDivisioFinalis{0}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{D}{ó}{}{D}{ó}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{m}{i}{}{m}{i}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{\response D}{ó}{}{\response }{Dó}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{m}{i}{}{m}{i}}{}{{0}{0}}{%
+\GreWriteTranslation{R/.  Señor, }%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -162,7 +168,9 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{}{a}{d}{a}{d}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{j}{u}{}{j}{u}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{a}{d}{a}{d}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{j}{u}{}{j}{u}}{}{{0}{0}}{%
+\GreWriteTranslation{date prisa en socorrerme.}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -231,7 +239,9 @@
 \GreDivisioMaior{0}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{Gl}{ó}{}{G}{ló}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{r}{i}{}{r}{i}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{Gl}{ó}{}{G}{ló}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{r}{i}{}{r}{i}}{}{{0}{0}}{%
+\GreWriteTranslation{Gloria al Padre,}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -276,7 +286,9 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{F}{í}{}{F}{í}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{l}{i}{}{l}{i}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{F}{í}{}{F}{í}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{l}{i}{}{l}{i}}{}{{0}{0}}{%
+\GreWriteTranslation{al Hijo}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -306,7 +318,9 @@
 \GreDivisioMinima{0}{}{0}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{}{e}{t}{e}{t}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{Sp}{i}{}{S}{pi}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{e}{t}{e}{t}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{Sp}{i}{}{S}{pi}}{}{{0}{0}}{%
+\GreWriteTranslation{ y al}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -321,7 +335,9 @@
 \GreGlyphHeights{10}{10}%
 }{}{}%
 }%
-\GreSyllable{\GreSetThisSyllable{r}{í}{}{r}{í}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{t}{u}{}{t}{u}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{r}{í}{}{r}{í}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{t}{u}{}{t}{u}}{}{{0}{0}}{%
+\GreWriteTranslation{Espíritu}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -343,7 +359,9 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{S}{á}{n}{S}{án}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{ct}{o}{\GreProtrusion{\GreProtrusionFactor{period}}{.}}{c}{to\GreProtrusion{\GreProtrusionFactor{period}}{.}}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{S}{á}{n}{S}{án}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{ct}{o}{\GreProtrusion{\GreProtrusionFactor{period}}{.}}{c}{to\GreProtrusion{\GreProtrusionFactor{period}}{.}}}{}{{0}{0}}{%
+\GreWriteTranslation{Santo}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{9}{\GreNextCustos{10}{}}{0}%
 {%
@@ -365,7 +383,9 @@
 \GreDivisioMaior{0}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{S}{i}{c}{S}{ic}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{}{u}{t}{u}{t}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{S}{i}{c}{S}{ic}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{}{u}{t}{u}{t}}{}{{0}{0}}{%
+\GreWriteTranslation{Como era en el principio,}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -432,7 +452,7 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{}{e}{t}{e}{t}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{n}{u}{nc\GreProtrusion{\GreProtrusionFactor{comma}}{,}}{n}{unc\GreProtrusion{\GreProtrusionFactor{comma}}{,}}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{e}{t}{e}{t}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{n}{u}{nc}{n}{unc}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -440,7 +460,9 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{n}{u}{nc\GreProtrusion{\GreProtrusionFactor{comma}}{,}}{n}{unc\GreProtrusion{\GreProtrusionFactor{comma}}{,}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{e}{t}{e}{t}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{n}{u}{nc}{n}{unc}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{e}{t}{e}{t}}{}{{0}{0}}{%
+\GreWriteTranslation{ahora y siempre}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -478,7 +500,9 @@
 \GreDivisioMinima{0}{}{0}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{}{e}{t}{e}{t}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{i}{n}{i}{n}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{e}{t}{e}{t}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{i}{n}{i}{n}}{}{{0}{0}}{%
+\GreWriteTranslation{por los siglos}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -516,7 +540,9 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{s}{æ}{}{s}{æ}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{c}{u}{}{c}{u}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{s}{æ}{}{s}{æ}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{c}{u}{}{c}{u}}{}{{0}{0}}{%
+\GreWriteTranslation{de los siglos.}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -545,7 +571,9 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{}{A}{}{A}{}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{m}{e}{n\GreProtrusion{\GreProtrusionFactor{period}}{.}}{m}{en\GreProtrusion{\GreProtrusionFactor{period}}{.}}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{A}{}{A}{}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{m}{e}{n\GreProtrusion{\GreProtrusionFactor{period}}{.}}{m}{en\GreProtrusion{\GreProtrusionFactor{period}}{.}}}{}{{0}{0}}{%
+\GreWriteTranslation{Amén.}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{9}{\GreNextCustos{10}{}}{0}%
 {%
@@ -567,7 +595,9 @@
 \GreDivisioMinor{0}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{}{A}{l}{A}{l}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{l}{e}{}{l}{e}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{A}{l}{A}{l}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{l}{e}{}{l}{e}}{}{{0}{0}}{%
+\GreWriteTranslation{Aleluya.}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{11}{}}{0}%
 {%
@@ -588,7 +618,7 @@
 \GreGlyphHeights{10}{9}%
 }{}{}%
 }%
-\GreSetFixedNextTextFormat{1}\GreSyllable{\GreSetThisSyllable{i}{a}{\GreProtrusion{\GreProtrusionFactor{period}}{.}}{i}{a\GreProtrusion{\GreProtrusionFactor{period}}{.}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{O}{r:}{O}{r:}}{}{{17}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{i}{a}{\GreProtrusion{\GreProtrusionFactor{period}}{.}}{i}{a\GreProtrusion{\GreProtrusionFactor{period}}{.}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{\rubrics{O bien:}}{}{\rubrics{O bien:}}{}}{}{{17}{0}}{}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{9}{\GreNextCustos{10}{}}{0}%
 {%
@@ -598,12 +628,14 @@
 }{}%
 }%
 %
-\GreSetFixedTextFormat{1}\GreBarSyllable{\GreSetThisSyllable{}{O}{r:}{O}{r:}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{L}{au}{s}{L}{aus}}{}{{0}{0}}{}{%
+\GreBarSyllable{\GreSetThisSyllable{}{\rubrics{O bien:}}{}{\rubrics{O bien:}}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{L}{au}{s}{L}{aus}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{0}%
 \GreDivisioFinalis{1}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{L}{au}{s}{L}{aus}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{t}{í}{}{t}{í}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{L}{au}{s}{L}{aus}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{t}{í}{}{t}{í}}{}{{0}{0}}{%
+\GreWriteTranslation{Alabanza a tí, }%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -626,7 +658,9 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{D}{ó}{}{D}{ó}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{m}{i}{}{m}{i}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{D}{ó}{}{D}{ó}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{m}{i}{}{m}{i}}{}{{0}{0}}{%
+\GreWriteTranslation{Señor}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -659,7 +693,9 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{}{æ}{}{æ}{}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{t}{é}{r}{t}{ér}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{æ}{}{æ}{}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{t}{é}{r}{t}{ér}}{}{{0}{0}}{%
+\GreWriteTranslation{de la eterna }%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -681,7 +717,9 @@
 }{}{}%
 }%
 %
-\GreSyllable{\GreSetThisSyllable{gl}{ó}{}{g}{ló}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{r}{i}{}{r}{i}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{gl}{ó}{}{g}{ló}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{r}{i}{}{r}{i}}{}{{0}{0}}{%
+\GreWriteTranslation{gloria.}%
+}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%

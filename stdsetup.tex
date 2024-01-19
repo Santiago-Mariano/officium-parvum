@@ -54,7 +54,7 @@
 
 % \newcommand{\rubrics}[1]{{\textit{#1}}}
 % \newcommand{\rubrics}[1]{{\textit{\footnotesize\color{rubricred}#1}}}
-\newcommand{\rubrics}[1]{{\footnotesize\color{rubricred}#1}}
+\newcommand{\rubrics}[1]{\textit{\scriptsize\color{rubricred}#1}}
 
 \newcommand{\rubricswref}[2]{\noindent\textit{#1} \hfill #2}
 %\newcommand{\latin}[1]{#1\par}
@@ -87,22 +87,22 @@
 %\newcommand{\lati}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1}
 %\newcommand{\verna}[1]{\switchcolumn\tr{#1}\switchcolumn}
 \newcommand{\startParallel}{
-    \colseprulecolor{red}
-    \begin{paracol}{2}
-        \selectlanguage{latin}
-        }
+	\colseprulecolor{red}
+	\begin{paracol}{2}
+		\selectlanguage{latin}
+		}
 
-        % \newcommand{\startParallel}{%
-        %     \begin{paracol}{2}
-        %         \selectlanguage{latin}
-        %         \mycolumnrule
-        %         }
+		% \newcommand{\startParallel}{%
+		%     \begin{paracol}{2}
+		%         \selectlanguage{latin}
+		%         \mycolumnrule
+		%         }
 
-        \newcommand{\latin}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1\switchcolumn\selectlanguage{spanish}}
-        \newcommand{\vern}[1]{\tr{#1}\switchcolumn*}
-        % \newcommand{\vern}[1]{\tr{#1}}
+		\newcommand{\latin}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1\switchcolumn\selectlanguage{spanish}}
+		\newcommand{\vern}[1]{\tr{#1}\switchcolumn*}
+		% \newcommand{\vern}[1]{\tr{#1}}
 
-        \newcommand{\stopParallel}{\end{paracol}\selectlanguage{spanish}}
+		\newcommand{\stopParallel}{\end{paracol}\selectlanguage{spanish}}
 
 
 % From Prima:
@@ -113,40 +113,40 @@
 \newcommand{\thedate}{\today}
 
 \newcommand{\mytitle}[2]{\begin{center}
-        \huge
-        \textsc{#1}
+		\huge
+		\textsc{#1}
 
-        \normalsize #2
+		\normalsize #2
 
-        \large
-        \textsc{Officium Parvum Beatae Mariae Virginis}
+		\large
+		\textsc{Officium Parvum Beatae Mariae Virginis}
 
-        \footnotesize
-        \thedate
+		\footnotesize
+		\thedate
 
-        https://littleoffice.brandt.id.au
+		https://littleoffice.brandt.id.au
 
-    \end{center}
+	\end{center}
 
-    \includegraphics[height=\baselineskip]{by.pdf}
-    This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit
-    http://creativecommons.org/licenses/by/4.0/.
+	\includegraphics[height=\baselineskip]{by.pdf}
+	This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit
+	http://creativecommons.org/licenses/by/4.0/.
 }
 
 \newcommand{\deusinadjref}{
-    \rubrics{Deus in adjutorium as at the beginning of Lauds, page \pageref{deus-memento}}
+	\rubrics{Deus in adjutorium as at the beginning of Lauds, page \pageref{deus-memento}}
 
-    \startParallel
-    \setcounter{versecount}{0}
-    \latin{Deus in adjutórium meum intende.}
-    \vern{O God, come to my assistance.}
-    \latin{Dómine, ad adjuvándum me festína.}
-    \vern{O Lord, make haste to help me.}
-    \latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
-    \vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
-    \stopParallel
+	\startParallel
+	\setcounter{versecount}{0}
+	\latin{Deus in adjutórium meum intende.}
+	\vern{O God, come to my assistance.}
+	\latin{Dómine, ad adjuvándum me festína.}
+	\vern{O Lord, make haste to help me.}
+	\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
+	\vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
+	\stopParallel
 
-    \rubrics{Then the Hymn, \emph{Memento Rerum Conditor}, page \pageref{memento}.}
+	\rubrics{Then the Hymn, \emph{Memento Rerum Conditor}, page \pageref{memento}.}
 }
 
 \newcommand{\versicle}{\textcolor{rubricred}{\textbf{\Vbar}.} }
