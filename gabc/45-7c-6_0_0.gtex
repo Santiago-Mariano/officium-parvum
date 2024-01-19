@@ -8,7 +8,7 @@
 \GreHeader{user-notes}{Psalm 45.}%
 \GreHeader{centering-scheme}{latin}%
 \GreEndHeaders %
-\GreBeginScore{d63e95e415757b2bfd52e071c5b34ae84a8ce6c0}{13}{9}{0}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
+\GreBeginScore{ba55a3d9b79d086f1aa4696f643d7ce7501c4af9}{13}{9}{0}{0}{}{4}{\GreInitialClefPosition{3}{0}}%
 \GreAnnotationLines{7.c}{}%
 \GreSetLargestClef{c}{3}{3}{c}{0}{3}%
 \GreScoreOpening{%
@@ -278,14 +278,14 @@
 \GreGlyphHeights{11}{11}%
 }{}{}%
 }%
-\GreSyllable{\GreSetThisSyllable{m}{i}{}{m}{i}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{n}{i}{, †}{n}{i, †}}{}{{0}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{m}{i}{}{m}{i}}{}{\GreUnstyled}{0}{\GreSetNextSyllable{n}{i}{, \reddagger}{n}{i, \reddagger}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
 \GreGlyphHeights{10}{10}%
 }{}{}%
 }%
-\GreSyllable{\GreSetThisSyllable{n}{i}{, †}{n}{i, †}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{}{}{}{}\GreLastOfLine}{}{{18}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{n}{i}{, \reddagger}{n}{i, \reddagger}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{}{}{}{}\GreLastOfLine}{}{{18}{0}}{}{%
 \GreSyllableNoteCount{4}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{11}{}}{0}%
 {%

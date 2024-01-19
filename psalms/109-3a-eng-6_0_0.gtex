@@ -9,7 +9,7 @@
 \GreHeader{centering-scheme}{latin}%
 \GreHeader{commentary}{Psalm 109}%
 \GreEndHeaders %
-\GreBeginScore{aefae4f9ddcee4cbc4f944cd645e97bc3d708e09}{13}{9}{1}{0}{}{4}{\GreInitialClefPosition{4}{0}}%
+\GreBeginScore{7c759b86ed1af40e417f88b1686d83cd6f944ea5}{13}{9}{1}{0}{}{4}{\GreInitialClefPosition{4}{0}}%
 \GreAnnotationLines{3.a}{}%
 \GreSetLargestClef{c}{4}{3}{c}{0}{3}%
 \GreScoreOpening{%
@@ -17,7 +17,7 @@
 \GreSetInitialClef{c}{4}{3}{c}{0}{3}{1}%
 }{%
 }{\GreSyllable}{\GreSetFirstSyllableText{D}{i}{}{{}{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{i}}}}{}}{{\GreFirstWord{\GreFirstSyllable{\GreFirstSyllableInitial{D}}}}{\GreFirstWord{\GreFirstSyllable{i}}}{}}{}}{}{\GreFirstWord}{0}{\GreSetNextSyllable{\GreFirstWord{x}}{\GreFirstWord{i}}{\GreFirstWord{t}}{\GreFirstWord{x}}{\GreFirstWord{i}\GreFirstWord{t}}}{}{{0}{0}}{%
-\GreWriteTranslation{The Lord said to my Lord: Sit thou at my right hand:}%
+\GreWriteTranslation{Oráculo del Señor a mi Señor: Siéntate a mi derecha,}%
 }{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{9}{\GreNextCustos{10}{}}{0}%
