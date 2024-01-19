@@ -45,7 +45,7 @@
 \GreGlyphHeights{11}{11}%
 }{}{}%
 }%
-\GreSyllable{\GreSetThisSyllable{}{a}{}{a}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{\greheightstar}{}{\greheightstar}{}}{}{{18}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{a}{}{a}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{\redgreheightstar}{}{\redgreheightstar}{}}{}{{18}{0}}{}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{11}{\GreNextCustos{11}{}}{0}%
 {%
@@ -53,7 +53,7 @@
 }{}{}%
 }%
 %
-\GreNoNoteSyllable{\GreSetThisSyllable{}{\greheightstar}{}{\greheightstar}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{e}{t}{e}{t}}{}{{0}{0}}{}{%
+\GreNoNoteSyllable{\GreSetThisSyllable{}{\redgreheightstar}{}{\redgreheightstar}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{e}{t}{e}{t}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{0}%
 }%
 %

@@ -123,7 +123,7 @@
 \GreGlyphHeights{10}{10}%
 }{}{}%
 }%
-\GreSyllable{\GreSetThisSyllable{}{a}{\GreProtrusion{\GreProtrusionFactor{comma}}{,}}{a}{\GreProtrusion{\GreProtrusionFactor{comma}}{,}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{\greheightstar}{}{\greheightstar}{}}{}{{13}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{}{a}{\GreProtrusion{\GreProtrusionFactor{comma}}{,}}{a}{\GreProtrusion{\GreProtrusionFactor{comma}}{,}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{\redgreheightstar}{}{\redgreheightstar}{}}{}{{13}{0}}{}{%
 \GreSyllableNoteCount{1}%
 \GreGlyph{\GreCPPunctum}{10}{\GreNextCustos{10}{}}{0}%
 {%
@@ -133,7 +133,7 @@
 }{}%
 }%
 %
-\GreBarSyllable{\GreSetThisSyllable{}{\greheightstar}{}{\greheightstar}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{d}{i}{}{d}{i}}{}{{0}{0}}{}{%
+\GreBarSyllable{\GreSetThisSyllable{}{\redgreheightstar}{}{\redgreheightstar}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{d}{i}{}{d}{i}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{0}%
 \GreDivisioMaior{1}{}%
 }%

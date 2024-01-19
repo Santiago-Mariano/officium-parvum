@@ -60,7 +60,7 @@
 \GreGlyphHeights{12}{10}%
 }{}{}%
 }%
-\GreSyllable{\GreSetThisSyllable{g}{o}{ \GreProtrusion{\GreProtrusionFactor{colon}}{:}}{g}{o \GreProtrusion{\GreProtrusionFactor{colon}}{:}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{\greheightstar}{}{\greheightstar}{}}{}{{18}{0}}{}{%
+\GreSyllable{\GreSetThisSyllable{g}{o}{ \GreProtrusion{\GreProtrusionFactor{colon}}{:}}{g}{o \GreProtrusion{\GreProtrusionFactor{colon}}{:}}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{}{\redgreheightstar}{}{\redgreheightstar}{}}{}{{18}{0}}{}{%
 \GreSyllableNoteCount{2}%
 \GreGlyph{\GreCPPunctum}{11}{\GreNextCustos{11}{}}{0}%
 {%
@@ -73,7 +73,7 @@
 }{}{}%
 }%
 %
-\GreNoNoteSyllable{\GreSetThisSyllable{}{\greheightstar}{}{\greheightstar}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{c}{u}{n}{c}{un}}{}{{0}{0}}{}{%
+\GreNoNoteSyllable{\GreSetThisSyllable{}{\redgreheightstar}{}{\redgreheightstar}{}}{}{\GreUnstyled}{1}{\GreSetNextSyllable{c}{u}{n}{c}{un}}{}{{0}{0}}{}{%
 \GreSyllableNoteCount{0}%
 }%
 %
