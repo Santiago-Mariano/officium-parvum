@@ -1,19 +1,31 @@
 \documentclass{article}
 \usepackage{paracol}
 \usepackage{xcolor}
+\usepackage[autocompile]{gregoriotex} %If I uncomment, the red-line between blocks dissapears
+
+
+
+
+\newcommand{\startParallel}{\begin{paracol}{2}}
+\newcommand{\latin}[1]{#1\switchcolumn}
+\newcommand{\vern}[1]{#1\switchcolumn*}
+\newcommand{\stopParallel}{\end{paracol}}
+
+\AtBeginDocument{
+\setlength{\columnseprule}{0.4pt}
+\colseprulecolor{red}
+}
+
 
 \begin{document}
 
-% Set the color of the column separation rule
-\setlength{\columnseprule}{0.4pt} % Set the width of the vertical rule
 
-\colseprulecolor{red} % This sets the color to red
+\startParallel
 
-\begin{paracol}{2}
-    spcdscdscds
-    \switchcolumn
-    sdcdscdsscdscs
+\latin{side 1}
+\vern{side2}
 
-\end{paracol}
+\stopParallel
+
 
 \end{document}

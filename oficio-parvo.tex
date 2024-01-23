@@ -1,4 +1,6 @@
 \documentclass[12pt,a5paper,openany]{memoir}
+
+
 \input stdsetup
 
 
@@ -17,10 +19,18 @@
 }
 \makeatother
 
+
 \makeevenhead{mystyle}{\itshape\leftmark}{}{}
 \makeoddhead{mystyle}{}{}{\itshape\rightmark}
 \makeevenfoot{mystyle}{\thepage}{}{}
 \makeoddfoot{mystyle}{}{}{\thepage}
+
+\renewcommand{\thepart}{\Roman{part}}  % Use Roman numerals for parts
+\makeatletter
+\@addtoreset{chapter}{part}  % Reset chapter counter at each new part
+\renewcommand{\thechapter}{\thepart.\arabic{chapter}}  % Format chapter numbering
+\makeatother
+
 
 \renewcommand*{\partname}{}
 % \makepagestyle{plain}
@@ -34,14 +44,48 @@
 % \renewcommand{\sectionmark}[1]{}
 % \renewcommand{\subsectionmark}[1]{}
 
+
+\setlength{\cftchapternumwidth}{2.5em}
+\setlength{\cftsectionnumwidth}{3.5em}
+\setlength{\cftsubsectionnumwidth}{4.0em}
+
 \begin{document}
+
+% Primera página, portada
+
+\thispagestyle{empty}
 
 \mytitle{El Pequeño Oficio de la Bienaventurada Virgen María}{Maitines, Vísperas y Completas}
 
 \newpage
+
+
+%Tabla de contenidos
+
+\renewcommand{\thepage}{\roman{page}}
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
 \tableofcontents*
 
-\chapter{Oraciones antes del oficio}
+
+
+%Cuerpo
+
+\cleardoublepage
+
+\renewcommand{\thepage}{\arabic{page}}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+
+
+
+\chapter*{Oraciones antes del oficio}
+\addcontentsline{toc}{chapter}{Oraciones antes del oficio}
 
 \startParallel
 Áperi Dómine, os meum ad benedicéndum nomen sanctum tuum: munda quoque cor meum ab ómnibus vanis, pervérsis et aliénis cogitatiónibus; intelléctum illúmina, afféctum inflámma, ut digne, atténte ac devóte hoc Offícium recitáre váleam, et exaudíri mérear ante conspéctum divínæ Majestátis túæ. Per Christum Dóminum nostrum.

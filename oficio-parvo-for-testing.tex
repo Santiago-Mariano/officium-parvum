@@ -1,34 +1,34 @@
 \documentclass[12pt,a5paper,openany]{memoir}
-\input stdsetup
+\input stdsetuptest
 
 
-\nouppercaseheads
+% \nouppercaseheads
 
-\makepagestyle{mystyle}
-\setlength{\headwidth}{\dimexpr\textwidth+\marginparsep+\marginparwidth\relax}
-\makerunningwidth{mystyle}{\headwidth}
-\makeatletter
-\makepsmarks{mystyle}{%
-    % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
-    % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
-    \createmark{part}{left}{nonumber}{}{}
-    % \createmark{part}{right}{shownumber}{}{. \space}
-    % \createmark{section}{left}{nonumber}{}{}
-}
-\makeatother
+% \makepagestyle{mystyle}
+% \setlength{\headwidth}{\dimexpr\textwidth+\marginparsep+\marginparwidth\relax}
+% \makerunningwidth{mystyle}{\headwidth}
+% \makeatletter
+% \makepsmarks{mystyle}{%
+%     % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
+%     % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
+%     \createmark{part}{left}{nonumber}{}{}
+%     % \createmark{part}{right}{shownumber}{}{. \space}
+%     % \createmark{section}{left}{nonumber}{}{}
+% }
+% \makeatother
 
-\makeevenhead{mystyle}{\itshape\leftmark}{}{}
-\makeoddhead{mystyle}{}{}{\itshape\rightmark}
-\makeevenfoot{mystyle}{\thepage}{}{}
-\makeoddfoot{mystyle}{}{}{\thepage}
+% \makeevenhead{mystyle}{\itshape\leftmark}{}{}
+% \makeoddhead{mystyle}{}{}{\itshape\rightmark}
+% \makeevenfoot{mystyle}{\thepage}{}{}
+% \makeoddfoot{mystyle}{}{}{\thepage}
 
-\renewcommand*{\partname}{}
-% \makepagestyle{plain}
-% \makerunningwidth{plain}{\headwidth}
-% \makeevenfoot{plain}{\thepage}{}{}
-% \makeoddfoot{plain}{}{}{\thepage}
+% \renewcommand*{\partname}{}
+% % \makepagestyle{plain}
+% % \makerunningwidth{plain}{\headwidth}
+% % \makeevenfoot{plain}{\thepage}{}{}
+% % \makeoddfoot{plain}{}{}{\thepage}
 
-\pagestyle{mystyle}
+% \pagestyle{mystyle}
 % \pagestyle{plain}
 
 % \renewcommand{\sectionmark}[1]{}
@@ -38,7 +38,14 @@
 
 % \gregorioscore{gabc/an--just-domine-labia-mea-esp}
 % \gregorioscore{deusinadj}
-\gregorioscore{gabc/18-4A}
+% \gregorioscore{gabc/18-4A}
+
+\startParallel
+
+\latin{Dolor sit amet}
+\vern{Dolor se sienta en amet}
+
+\stopParallel
 
 
 
