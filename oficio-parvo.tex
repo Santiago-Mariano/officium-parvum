@@ -1,27 +1,39 @@
 \documentclass[12pt,a5paper,openright]{memoir}
-
-
 \input stdsetup
-
 
 \nouppercaseheads
 
 \makepagestyle{mystyle}
 \setlength{\headwidth}{\dimexpr\textwidth+\marginparsep+\marginparwidth\relax}
 \makerunningwidth{mystyle}{\headwidth}
+
+% \makeatletter
+% \makepsmarks{mystyle}{%
+%     \createmark{part}{both}{nonumber}{}{}  % Adjusted to apply for both sides and exclude part number
+%     \createmark{chapter}{both}{nonumber}{}{} % Clear chapter marks if not needed
+%     \createmark{section}{both}{nonumber}{}{} % Clear section marks if not needed
+%     % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
+%     % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
+%     % \createmark{part}{left}{nonumber}{}{}
+%     % \createmark{part}{right}{shownumber}{}{. \space}
+%     % \createmark{section}{left}{nonumber}{}{}
+% }
+% \makeatother
+
 \makeatletter
 \makepsmarks{mystyle}{%
-    % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
-    % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
-    \createmark{part}{left}{nonumber}{}{}
-    % \createmark{part}{right}{shownumber}{}{. \space}
-    % \createmark{section}{left}{nonumber}{}{}
+    \createmark{part}{both}{nonumber}{}{}  % Keep part name for both left and right marks, exclude part number
+    \createmark{chapter}{left}{nonumber}{}{} % Clear chapter marks to prevent them from appearing
+    \createmark{section}{left}{nonumber}{}{} % Clear section marks to prevent them from appearing
+    % The following lines explicitly clear any right marks for chapters and sections, if needed
+    \createmark{chapter}{right}{nonumber}{}{} 
+    \createmark{section}{right}{nonumber}{}{}
 }
 \makeatother
 
 
-\makeevenhead{mystyle}{\itshape\leftmark}{}{}
-\makeoddhead{mystyle}{}{}{\itshape\rightmark}
+\makeevenhead{mystyle}{\itshape\leftmark}{}{}  % Use \leftmark for even page header
+\makeoddhead{mystyle}{}{}{\itshape\leftmark}  % Consistent with even page header
 \makeevenfoot{mystyle}{\thepage}{}{}
 \makeoddfoot{mystyle}{}{}{\thepage}
 
@@ -31,19 +43,9 @@
 \renewcommand{\thechapter}{\thepart.\arabic{chapter}}  % Format chapter numbering
 \makeatother
 
-
 \renewcommand*{\partname}{}
-% \makepagestyle{plain}
-% \makerunningwidth{plain}{\headwidth}
-% \makeevenfoot{plain}{\thepage}{}{}
-% \makeoddfoot{plain}{}{}{\thepage}
 
 \pagestyle{mystyle}
-% \pagestyle{plain}
-
-% \renewcommand{\sectionmark}[1]{}
-% \renewcommand{\subsectionmark}[1]{}
-
 
 \setlength{\cftchapternumwidth}{2.5em}
 \setlength{\cftsectionnumwidth}{3.5em}
@@ -106,8 +108,8 @@ Dómine, in unióne illíus divínæ intentiónis, qua ipse in terris laudes Deo
 \switchcolumn
 \selectlanguage{spanish}
 \tr{
-    Amén.
-    Oh Señor, en unión con aquella divina intención, con la que tu mismo hiciste alabanza a Dios en la tierra, te ofrezco a ti estas horas (o esta hora).}
+	Amén.
+	Oh Señor, en unión con aquella divina intención, con la que tu mismo hiciste alabanza a Dios en la tierra, te ofrezco a ti estas horas (o esta hora).}
 \stopParallel
 
 \part{Maitines (Matutinum)}
@@ -163,7 +165,7 @@ Sacrosánctæ et indivíduæ Trinitáti, crucifíxi Dómini nostri Jesu Christi 
 \tr{Señor Jesucristo, a la fecunda virginidad de la santísima y gloriosísima María, siempre Virgen,, a toda la asamblea de los santos, sea atribuida toda alabanza, honor, poder y gloria por toda criatura; y a nosotros se nos conceda la remisión de todos nuestros pecados, por los siglos de los siglos.
 
 
-    \response Amen.}
+	\response Amen.}
 
 \switchcolumn*
 
@@ -178,7 +180,7 @@ Sacrosánctæ et indivíduæ Trinitáti, crucifíxi Dómini nostri Jesu Christi 
 \tr{\versicle Bendito el vientre de la Virgen María, que portó al Hijo del Padre Eterno.
 
 
-    \response Y benditos los pechos que alimentaron a Cristo nuestro Señor.}
+	\response Y benditos los pechos que alimentaron a Cristo nuestro Señor.}
 
 
 \switchcolumn*
