@@ -1,71 +1,95 @@
 \usepackage[spanish, latin, spanish]{babel}
 \usepackage{fontspec}
-% \usepackage[autocompile]{gregoriotex}
 \usepackage{paracol}
 \usepackage{xcolor}
+% \usepackage{tocloft}
+
+% Adjust the width reserved for the part number in the ToC
+% \setlength{\cftpartnumwidth}{3em} % You can change '3em' to a suitable width
+
+% \newlength{\cftchapnumwidth}
+% \setlength{\cftchapnumwidth}{3em} % Adjust this value as needed
+% \renewcommand{\cftchappresnum}{\hbox to 3em{}} % Adjust space before chapter title
+
+% \renewcommand{\@pnumwidth}{4em}
 
 
-% \setmainfont{Linux Libertine O}
+% \usepackage{titletoc}
+
+% \titlecontents{chapter}
+% [3em] % adjust left margin
+% {}
+% {\contentslabel{2.5em}} % adjust label width
+% {\hspace*{-2.5em}}
+% {\titlerule*[1pc]{.}\contentspage}
+
+\setmainfont{Linux Libertine O}
 % \newfontface{\vectis}{[~/.fonts/Scribish.ttf]}
-% \newfontface{\vectis}{Scribish}[Path=./fonts/, Extension=.ttf]
+\newfontface{\vectis}{Scribish}[Path=./fonts/, Extension=.ttf]
 % \newfontface{\vectis}{Medieval Scribish}
 % \newfontface{\inglesh}{[~/.fonts/LinBiolinumR.ttf]}
 % \newfontface{\inglesh}{Linux Libertine O}
 % \newfontface{\inglesh}{LinBiolinumR}[Path=./fonts/, Extension=.ttf]
 % \newfontface{\inglesh}{Scribish}[Path=./fonts/, Extension=.ttf]
-% \newfontface{\inglesh}{Linux Libertine O}
+\newfontface{\inglesh}{Linux Libertine O}
 % \newfontface{\justbold}{Calluna Bold}
-% \setlength{\trimtop}{0pt}
-% \setlength{\trimedge}{0pt}
-% \settypeblocksize{170mm}{115mm}{*} % Was 101mm in a5
-% \setulmargins{*}{*}{1.4}
-% \setlrmargins{*}{*}{1.2}
-% \setheadfoot{\onelineskip}{2\onelineskip}
-% \setheaderspaces{*}{.8\onelineskip}{*}
-% \checkandfixthelayout
-% \usepackage{graphicx}
+\usepackage[autocompile]{gregoriotex}
+\setlength{\trimtop}{0pt}
+\setlength{\trimedge}{0pt}
+\settypeblocksize{170mm}{115mm}{*} % Was 101mm in a5
+\setulmargins{*}{*}{1.4}
+\setlrmargins{*}{*}{1.2}
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{.8\onelineskip}{*}
+\checkandfixthelayout
+\usepackage{graphicx}
 
-% \definecolor{rubricred}{rgb}{0.6, 0, 0} % Define dark
-
-
-
-% \tolerance=5000
-% \pretolerance=1000
-
-% \columnratio{0.6}
-
-% \setlength{\parskip}{0pt}
-% %\setlength{\parskip}{6pt plus 2pt minus 1pt}
-% \setlength{\parindent}{0pt}
-% \setlength{\stanzaskip}{6pt plus 2pt minus 1pt}
-
-% %\grechangestyle{translation}{\inglesh \fontsize{10}{14}\selectfont}
-% \grechangestyle{translation}{\inglesh \fontsize{8}{10}\selectfont}
-% %\newcommand\tr[1]{\selectlanguage{british}{\inglesh \fontsize{10}{14.5pt}\selectfont #1}}
-% \newcommand\tr[1]{\selectlanguage{british}{\inglesh \fontsize{8}{10}\selectfont #1}}
-
-% \grechangestyle{initial}{\vectis \fontsize{22}{24}\selectfont}
-% \grechangestyle{annotation}{\tiny}
-
-% \grechangestaffsize{15}
-% \grechangedim{spacebeneathtext}{3pt}{scalable}
-% %\gre@createdim{spacebeneathtext}{0 cm}{scalable}%
-% \grechangedim{translationheight}{12pt}{scalable}
-% %\gre@createdim{translationheight}{0.5 cm}{scalable}%
+\definecolor{rubricred}{rgb}{0.6, 0, 0} % Define dark
 
 
-% % \newcommand{\rubrics}[1]{{\textit{#1}}}
-% % \newcommand{\rubrics}[1]{{\textit{\footnotesize\color{rubricred}#1}}}
-% \newcommand{\rubrics}[1]{\textit{\scriptsize\color{rubricred}#1}}
 
-% \newcommand{\rubricswref}[2]{\noindent\textit{#1} \hfill #2}
-% %\newcommand{\latin}[1]{#1\par}
-% %\newcommand{\vern}[1]{\footnotesize\textit{#1}\par}
+\tolerance=5000
+\pretolerance=1000
 
-% \newcounter{versecount}
-% \setcounter{versecount}{0}
+\columnratio{0.6}
 
-% \newcommand{\vs}{\ifnum \value{versecount}>0 \theversecount . \stepcounter{versecount}\fi}
+\setlength{\parskip}{0pt}
+%\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\parindent}{0pt}
+\setlength{\stanzaskip}{6pt plus 2pt minus 1pt}
+
+%\grechangestyle{translation}{\inglesh \fontsize{10}{14}\selectfont}
+\grechangestyle{translation}{\inglesh \fontsize{8}{10}\selectfont}
+%\newcommand\tr[1]{\selectlanguage{british}{\inglesh \fontsize{10}{14.5pt}\selectfont #1}}
+\newcommand\tr[1]{\selectlanguage{british}{\inglesh \fontsize{8}{10}\selectfont #1}}
+
+\grechangestyle{initial}{\color{rubricred} \vectis \fontsize{22}{24}\selectfont }
+\grechangestyle{annotation}{\tiny}
+
+\grechangestaffsize{15}
+\grechangedim{spacebeneathtext}{3pt}{scalable}
+%\gre@createdim{spacebeneathtext}{0 cm}{scalable}%
+\grechangedim{translationheight}{12pt}{scalable}
+%\gre@createdim{translationheight}{0.5 cm}{scalable}%
+
+
+% \newcommand{\rubrics}[1]{{\textit{#1}}}
+% \newcommand{\rubrics}[1]{{\textit{\footnotesize\color{rubricred}#1}}}
+\newcommand{\rubrics}[1]{\textit{\scriptsize\color{rubricred}#1}}
+
+\newcommand{\rubricswref}[2]{\noindent\textit{#1} \hfill #2}
+%\newcommand{\latin}[1]{#1\par}
+%\newcommand{\vern}[1]{\footnotesize\textit{#1}\par}
+
+\newcounter{versecount}
+\setcounter{versecount}{0}
+
+\newcommand{\vs}{\ifnum \value{versecount}>0 \theversecount . \stepcounter{versecount}\fi}
+
+% Set the color of the column separation rule
+\setlength{\columnseprule}{0.4pt} % Set the width of the vertical rule
+
+\colseprulecolor{red} % This sets the color to red
 
 % Just added the * at the end of vern - see what happens
 
@@ -83,29 +107,25 @@
 %         \newcommand{\stopParallel}{\end{paracol}\selectlanguage{spanish}}
 %\newcommand{\lati}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1}
 %\newcommand{\verna}[1]{\switchcolumn\tr{#1}\switchcolumn}
-%\newcommand{\startParallel}{
-%	\setlength{\columnseprule}{0.4pt} % Set the width of the vertical rule
-%	\colseprulecolor{red}
-%	\begin{paracol}{2}
-%		\selectlanguage{latin}
-%		}
-%
-%		% \newcommand{\startParallel}{%
-%		%     \begin{paracol}{2}
-%		%         \selectlanguage{latin}
-%		%         \mycolumnrule
-%		%         }
-%
-%\newcommand{\latin}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1\switchcolumn\selectlanguage{spanish}}
-%		\newcommand{\vern}[1]{\tr{#1}\switchcolumn*}
-%		% \newcommand{\vern}[1]{\tr{#1}}
-%
-%		\newcommand{\stopParallel}{\end{paracol}\selectlanguage{spanish}}
+\newcommand{\startParallel}{
+	\setlength{\columnseprule}{0.4pt} % Set the width of the vertical rule
+	\colseprulecolor{red}
+	\begin{paracol}{2}
+		\selectlanguage{latin}
+		}
 
-\newcommand{\startParallel}{\setlength{\columnseprule}{0.4pt}\colseprulecolor{red}\begin{paracol}{2}}
-		\newcommand{\latin}[1]{#1\switchcolumn}
-		\newcommand{\vern}[1]{#1\switchcolumn*}
-		\newcommand{\stopParallel}{\end{paracol}}
+		% \newcommand{\startParallel}{%
+		%     \begin{paracol}{2}
+		%         \selectlanguage{latin}
+		%         \mycolumnrule
+		%         }
+
+		\newcommand{\latin}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1\switchcolumn\selectlanguage{spanish}}
+		\newcommand{\vern}[1]{\tr{#1}\switchcolumn*}
+		% \newcommand{\vern}[1]{\tr{#1}}
+
+		\newcommand{\stopParallel}{\end{paracol}\selectlanguage{spanish}}
+
 
 % From Prima:
 

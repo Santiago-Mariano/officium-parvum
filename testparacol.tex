@@ -1,10 +1,10 @@
+%Compile line: latexmk -lualatex testparacol.tex
+
+
 \documentclass{article}
 \usepackage{paracol}
 \usepackage{xcolor}
-\usepackage[autocompile]{gregoriotex} %If I uncomment, the red-line between blocks dissapears
-
-
-
+\usepackage[autocompile]{gregoriotex} % Uncomment to see the issue, compiling using LuaLaTeX
 
 \newcommand{\startParallel}{\begin{paracol}{2}}
 \newcommand{\latin}[1]{#1\switchcolumn}
@@ -16,16 +16,39 @@
 \colseprulecolor{red}
 }
 
+\definecolor{gregoriocolor}{RGB}{229,53,44}
+\gresetlinecolor{gregoriocolor}
 
 \begin{document}
 
-
 \startParallel
 
-\latin{side 1}
-\vern{side2}
+\latin{
+	Pater noster, qui es in caelis,\\
+	sanctificetur nomen tuum.\\
+	Adveniat regnum tuum.\\
+	Fiat voluntas tua, sicut in caelo et in terra.\\
+	Panem nostrum quotidianum da nobis hodie,\\
+	et dimitte nobis debita nostra sicut\\
+	et nos dimittimus debitoribus nostris.\\
+	Et ne nos inducas in tentationem,\\
+	sed libera nos a malo.\\
+	Amen.
+}
+
+\vern{
+	Our Father, who art in heaven,\\
+	hallowed be thy name.\\
+	Thy kingdom come.\\
+	Thy will be done, on earth as it is in heaven.\\
+	Give us this day our daily bread,\\
+	and forgive us our trespasses, as we forgive those\\
+	who trespass against us.\\
+	And lead us not into temptation,\\
+	but deliver us from evil.\\
+	Amen.
+}
 
 \stopParallel
-
 
 \end{document}
