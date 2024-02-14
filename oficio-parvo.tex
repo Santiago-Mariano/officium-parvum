@@ -1,59 +1,6 @@
 \documentclass[12pt,a5paper,openright]{memoir}
 \input stdsetup
 
-\nouppercaseheads
-
-\makepagestyle{mystyle}
-\setlength{\headwidth}{\dimexpr\textwidth+\marginparsep+\marginparwidth\relax}
-\makerunningwidth{mystyle}{\headwidth}
-
-% \makeatletter
-% \makepsmarks{mystyle}{%
-%     \createmark{part}{both}{nonumber}{}{}  % Adjusted to apply for both sides and exclude part number
-%     \createmark{chapter}{both}{nonumber}{}{} % Clear chapter marks if not needed
-%     \createmark{section}{both}{nonumber}{}{} % Clear section marks if not needed
-%     % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
-%     % \createmark{chapter}{right}{nonumber}{\@chapapp\ }{. x\ }
-%     % \createmark{part}{left}{nonumber}{}{}
-%     % \createmark{part}{right}{shownumber}{}{. \space}
-%     % \createmark{section}{left}{nonumber}{}{}
-% }
-% \makeatother
-
-\makeatletter
-\makepsmarks{mystyle}{%
-    \createmark{part}{both}{nonumber}{}{}  % Keep part name for both left and right marks, exclude part number
-    \createmark{chapter}{left}{nonumber}{}{} % Clear chapter marks to prevent them from appearing
-    \createmark{section}{left}{nonumber}{}{} % Clear section marks to prevent them from appearing
-    % The following lines explicitly clear any right marks for chapters and sections, if needed
-    \createmark{chapter}{right}{nonumber}{}{} 
-    \createmark{section}{right}{nonumber}{}{}
-}
-\makeatother
-
-
-\makeevenhead{mystyle}{\itshape\leftmark}{}{}  % Use \leftmark for even page header
-\makeoddhead{mystyle}{}{}{\itshape\leftmark}  % Consistent with even page header
-\makeevenfoot{mystyle}{\thepage}{}{}
-\makeoddfoot{mystyle}{}{}{\thepage}
-
-\renewcommand{\thepart}{\Roman{part}}  % Use Roman numerals for parts
-\makeatletter
-\@addtoreset{chapter}{part}  % Reset chapter counter at each new part
-\renewcommand{\thechapter}{\thepart.\arabic{chapter}}  % Format chapter numbering
-\makeatother
-
-\renewcommand*{\partname}{}
-
-\pagestyle{mystyle}
-
-\setlength{\cftchapternumwidth}{2.5em}
-\setlength{\cftsectionnumwidth}{3.5em}
-\setlength{\cftsubsectionnumwidth}{4.0em}
-
-
-\definecolor{gregoriocolor}{RGB}{229,53,44}
-\gresetlinecolor{gregoriocolor}
 
 
 \begin{document}
@@ -62,9 +9,76 @@
 
 \thispagestyle{empty}
 
-\mytitle{El Pequeño Oficio de la Bienaventurada Virgen María}{Maitines, Vísperas y Completas}
 
+\null\vfill
+\begin{center}
+    \large
+    \textsc{Officium Parvum Beatae Mariae Virginis}
+
+    \bigskip
+
+    \huge
+    \textsc{\gregorian El Pequeño Oficio de la Bienaventurada Virgen María}
+    % \textsc{El Pequeño Oficio de la Bienaventurada Virgen María}
+
+    \bigskip
+    \bigskip
+    \bigskip
+
+
+    \normalsize Maitines, Vísperas y Completas
+
+
+    \footnotesize
+
+
+\end{center}
+\null\vfill
+
+% Segunda página, contra-portada
 \newpage
+\thispagestyle{empty}
+
+\null\vfill
+\begin{center}
+
+    \today
+
+    www.cantatedomino.cl
+
+    \bigskip
+    \bigskip
+    \bigskip
+    \bigskip
+    \bigskip
+    \bigskip
+
+    \footnotesize
+
+    \textbf{Basado en el generoso trabajo de Verónica Brandt. }
+
+    \bigskip
+    \bigskip
+    \bigskip
+
+    \begin{minipage}{0.6\textwidth}
+
+
+        %This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit
+
+        \includegraphics[height=0.8\baselineskip]{by.pdf} Este trabajo está licenciado bajo la ``Creative Commons Attribution 4.0 International License''. Para ver una copia de esta licencia, visitar:
+        http://creativecommons.org/licenses/by/4.0/.
+
+    \end{minipage}
+
+
+\end{center}
+\null\vfill
+
+
+
+
+\cleardoublepage
 
 
 %Tabla de contenidos
@@ -89,8 +103,32 @@
 
 
 
+\cleardoublepage
+\chapter*{Introducción}
+\addcontentsline{toc}{chapter}{Introducción}
 
 
+(TEXTO GENERADO POR CHATGPT)
+
+El Pequeño Oficio de la Bienaventurada Virgen María es una devoción tradicional dentro de la Iglesia Católica que consiste en la recitación diaria de oraciones y lecturas bíblicas dedicadas a la Virgen María. Esta práctica, arraigada en la historia de la Iglesia, ofrece múltiples beneficios espirituales, emocionales y comunitarios para aquellos fieles que deciden incorporarla en su vida de oración. A continuación, se exploran algunas de las razones por las cuales conviene rezar el Pequeño Oficio de la Bienaventurada Virgen María.
+
+En primer lugar, rezar el Pequeño Oficio permite a los fieles honrar y profundizar su relación con la Virgen María, quien es modelo de fe, obediencia y humildad. La devoción mariana nos conecta con la madre de Jesucristo, facilitando una mayor comprensión y amor hacia Ella, lo que, a su vez, nos acerca más a su Hijo. Al reflexionar sobre las virtudes y el papel de María en la historia de la salvación, los fieles pueden encontrar inspiración para seguir su ejemplo en su propia vida espiritual.
+
+Además, el Pequeño Oficio promueve la disciplina espiritual y la oración constante. Al comprometerse a rezar las horas del Oficio a lo largo del día, los fieles desarrollan una rutina de oración que estructura su día en torno a momentos de reflexión y conexión con Dios. Esta práctica regular de oración fortalece la fe, ofrece consuelo en momentos de dificultad y brinda paz interior al recordar constantemente la presencia y protección de Dios en nuestras vidas.
+
+Otra ventaja de esta devoción es su papel en la comunidad de creyentes. Aunque se puede rezar individualmente, el Pequeño Oficio también se practica en grupo, fomentando la unidad y el apoyo mutuo entre los fieles. Esta experiencia comunitaria de oración refuerza los lazos entre los miembros de la Iglesia, promoviendo un sentido de pertenencia y solidaridad en el camino espiritual compartido.
+
+El Pequeño Oficio de la Bienaventurada Virgen María también es accesible y flexible, adaptándose a las necesidades y circunstancias de cada fiel. Aunque tiene una estructura definida, los individuos pueden ajustar la frecuencia y la forma en que lo rezan, permitiendo que personas de diversas etapas de vida y con diferentes horarios integren esta práctica en su rutina diaria.
+
+Finalmente, rezar el Pequeño Oficio es una forma de participar en una tradición viva que ha enriquecido la vida espiritual de incontables generaciones de católicos a lo largo de los siglos. Al unirse a esta corriente de fe, los fieles se conectan con la Iglesia universal, tanto pasada como presente, y contribuyen a la transmisión de esta rica herencia espiritual a futuras generaciones.
+
+En conclusión, el Pequeño Oficio de la Bienaventurada Virgen María ofrece profundos beneficios espirituales, promoviendo el crecimiento personal en la fe, la disciplina en la oración, el fortalecimiento de la comunidad cristiana, la flexibilidad en la práctica devocional y la conexión con una tradición histórica. Por estas razones, rezar el Pequeño Oficio es una práctica enriquecedora y recomendable para todos los fieles que deseen profundizar su devoción mariana y su vida espiritual.
+
+
+
+
+
+\cleardoublepage
 \chapter*{Oraciones antes del oficio}
 \addcontentsline{toc}{chapter}{Oraciones antes del oficio}
 
@@ -113,50 +151,16 @@ Dómine, in unióne illíus divínæ intentiónis, qua ipse in terris laudes Deo
 \switchcolumn
 \selectlanguage{spanish}
 \tr{
-	Amén.
-	Oh Señor, en unión con aquella divina intención, con la que tu mismo hiciste alabanza a Dios en la tierra, te ofrezco a ti estas horas (o esta hora).}
+    Amén.
+    Oh Señor, en unión con aquella divina intención, con la que tu mismo hiciste alabanza a Dios en la tierra, te ofrezco a ti estas horas (o esta hora).}
 \stopParallel
 
-\part{Maitines (Matutinum)}
 
 
-\input mid-matins
 
-
-\rubrics{Es recomendable finalizar la recitación pública del Pequeño Oficio con la correspondiente Antífona Mariana, página \pageref{marian-ants}.}
-
-
-\part{Vísperas (Vesperae)}
-
-\startParallel
-\latin{Deus \redgrecross in adjutórium meum intende.}
-\vern{Oh Dios \redgrecross , ven en mi auxilio.}
-
-\latin{Dómine, ad adjuvándum me festína.}
-\vern{Señor, date prisa en socorrerme.}
-
-\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
-\vern{Gloria al Padre,  al Hijo y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amen.}
-\stopParallel
-
-\input mid-vespers
-
-\rubrics{Es recomendable finalizar la recitación pública del Pequeño Oficio con la correspondiente Antífona Mariana, página \pageref{marian-ants}.}
-
-\part{Completas (Completorium)}
-
-
-\input mid-compline
-
-\rubrics{La Hora de las Completas siempre concluye con la Antífona Mariana correspondiente, página \pageref{marian-ants}.}
-
-\chapter{Antífonas Marianas}
-
-\label{marian-ants}
-\input marianantiphon
-
-
-\chapter{Oraciones para después del oficio}
+\cleardoublepage
+\chapter*{Oraciones para después del oficio}
+\addcontentsline{toc}{chapter}{Oraciones para después del oficio}
 
 \selectlanguage{latin}
 \startParallel
@@ -170,7 +174,7 @@ Sacrosánctæ et indivíduæ Trinitáti, crucifíxi Dómini nostri Jesu Christi 
 \tr{Señor Jesucristo, a la fecunda virginidad de la santísima y gloriosísima María, siempre Virgen,, a toda la asamblea de los santos, sea atribuida toda alabanza, honor, poder y gloria por toda criatura; y a nosotros se nos conceda la remisión de todos nuestros pecados, por los siglos de los siglos.
 
 
-	\response Amen.}
+    \response Amen.}
 
 \switchcolumn*
 
@@ -185,7 +189,7 @@ Sacrosánctæ et indivíduæ Trinitáti, crucifíxi Dómini nostri Jesu Christi 
 \tr{\versicle Bendito el vientre de la Virgen María, que portó al Hijo del Padre Eterno.
 
 
-	\response Y benditos los pechos que alimentaron a Cristo nuestro Señor.}
+    \response Y benditos los pechos que alimentaron a Cristo nuestro Señor.}
 
 
 \switchcolumn*
@@ -232,6 +236,60 @@ Credo in Deum, Patrem omnipoténtem, Creatórem cæli et terræ. Et in Jesum Chr
 
 \selectlanguage{latin}
 Laus Deo Virginique Matri
+
+
+\end{document}
+
+
+\part{Maitines (Matutinum)}
+
+
+\input mid-matins
+
+
+\rubrics{Es recomendable finalizar la recitación pública del Pequeño Oficio con la correspondiente Antífona Mariana, página \pageref{marian-ants}.}
+
+
+
+
+
+\part{Vísperas (Vesperae)}
+
+\startParallel
+\latin{Deus \redgrecross in adjutórium meum intende.}
+\vern{Oh Dios \redgrecross , ven en mi auxilio.}
+
+\latin{Dómine, ad adjuvándum me festína.}
+\vern{Señor, date prisa en socorrerme.}
+
+\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
+\vern{Gloria al Padre,  al Hijo y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amen.}
+\stopParallel
+
+\input mid-vespers
+
+\rubrics{Es recomendable finalizar la recitación pública del Pequeño Oficio con la correspondiente Antífona Mariana, página \pageref{marian-ants}.}
+
+
+
+
+
+\part{Completas (Completorium)}
+
+
+\input mid-compline
+
+\rubrics{La Hora de las Completas siempre concluye con la Antífona Mariana correspondiente, página \pageref{marian-ants}.}
+
+\chapter{Antífonas Marianas}
+
+\label{marian-ants}
+\input marianantiphon
+
+
+
+
+
 
 \end{document}
 
