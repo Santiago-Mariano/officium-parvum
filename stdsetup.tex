@@ -110,23 +110,23 @@
 %\newcommand{\lati}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1}
 %\newcommand{\verna}[1]{\switchcolumn\tr{#1}\switchcolumn}
 \newcommand{\startParallel}{
-    \setlength{\columnseprule}{0.4pt} % Set the width of the vertical rule
-    \colseprulecolor{red}
-    \begin{paracol}{2}
-        \selectlanguage{latin}
-        }
+	\setlength{\columnseprule}{0.4pt} % Set the width of the vertical rule
+	\colseprulecolor{red}
+	\begin{paracol}{2}
+		\selectlanguage{latin}
+		}
 
-        % \newcommand{\startParallel}{%
-        %     \begin{paracol}{2}
-        %         \selectlanguage{latin}
-        %         \mycolumnrule
-        %         }
+		% \newcommand{\startParallel}{%
+		%     \begin{paracol}{2}
+		%         \selectlanguage{latin}
+		%         \mycolumnrule
+		%         }
 
-        \newcommand{\latin}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1\switchcolumn\selectlanguage{spanish}}
-        \newcommand{\vern}[1]{\tr{#1}\switchcolumn*}
-        % \newcommand{\vern}[1]{\tr{#1}}
+		\newcommand{\latin}[1]{\selectlanguage{latin}\ifnum \value{versecount}>0 \stepcounter{versecount} \theversecount .~\fi#1\switchcolumn\selectlanguage{spanish}}
+		\newcommand{\vern}[1]{\tr{#1}\switchcolumn*}
+		% \newcommand{\vern}[1]{\tr{#1}}
 
-        \newcommand{\stopParallel}{\end{paracol}\selectlanguage{spanish}}
+		\newcommand{\stopParallel}{\end{paracol}\selectlanguage{spanish}}
 
 
 % From Prima:
@@ -158,19 +158,19 @@
 % }
 
 \newcommand{\deusinadjref}{
-    \rubrics{Deus in adjutorium as at the beginning of Lauds, page \pageref{deus-memento}}
+	\rubrics{Deus in adjutorium as at the beginning of Lauds, page \pageref{deus-memento}}
 
-    \startParallel
-    \setcounter{versecount}{0}
-    \latin{Deus in adjutórium meum intende.}
-    \vern{O God, come to my assistance.}
-    \latin{Dómine, ad adjuvándum me festína.}
-    \vern{O Lord, make haste to help me.}
-    \latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
-    \vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
-    \stopParallel
+	\startParallel
+	\setcounter{versecount}{0}
+	\latin{Deus in adjutórium meum intende.}
+	\vern{O God, come to my assistance.}
+	\latin{Dómine, ad adjuvándum me festína.}
+	\vern{O Lord, make haste to help me.}
+	\latin{Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc et semper, et in saécula saeculórum. Amen.}
+	\vern{Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now and ever shall be unto ages of ages. Amen.}
+	\stopParallel
 
-    \rubrics{Then the Hymn, \emph{Memento Rerum Conditor}, page \pageref{memento}.}
+	\rubrics{Then the Hymn, \emph{Memento Rerum Conditor}, page \pageref{memento}.}
 }
 
 \newcommand{\versicle}{\textcolor{rubricred}{\textbf{\Vbar}.} }
@@ -206,20 +206,21 @@
 
 \makeatletter
 \makepsmarks{mystyle}{%
-    \createmark{part}{both}{nonumber}{}{}  % Keep part name for both left and right marks, exclude part number
-    \createmark{chapter}{left}{nonumber}{}{} % Clear chapter marks to prevent them from appearing
-    \createmark{section}{left}{nonumber}{}{} % Clear section marks to prevent them from appearing
-    % The following lines explicitly clear any right marks for chapters and sections, if needed
-    \createmark{chapter}{right}{nonumber}{}{}
-    \createmark{section}{right}{nonumber}{}{}
+	\createmark{part}{both}{nonumber}{}{}  % Keep part name for both left and right marks, exclude part number
+	\createmark{chapter}{left}{nonumber}{}{} % Clear chapter marks to prevent them from appearing
+	\createmark{section}{left}{nonumber}{}{} % Clear section marks to prevent them from appearing
+	% The following lines explicitly clear any right marks for chapters and sections, if needed
+	\createmark{chapter}{right}{nonumber}{}{}
+	\createmark{section}{right}{nonumber}{}{}
 }
 \makeatother
 
 
 \makeevenhead{mystyle}{\itshape\leftmark}{}{}  % Use \leftmark for even page header
 \makeoddhead{mystyle}{}{}{\itshape\leftmark}  % Consistent with even page header
-\makeevenfoot{mystyle}{\thepage}{}{}
-\makeoddfoot{mystyle}{}{}{\thepage}
+
+\makeevenfoot{mystyle}{}{\thepage}{}
+\makeoddfoot{mystyle}{}{\thepage}{}
 
 \renewcommand{\thepart}{\Roman{part}}  % Use Roman numerals for parts
 \makeatletter
@@ -230,6 +231,10 @@
 \renewcommand*{\partname}{}
 
 \pagestyle{mystyle}
+
+% \makeevenhead{mystyle}{\itshape\leftmark}{}{\thepage}  % Use \leftmark for even page header
+% \makeoddhead{mystyle}{\thepage}{}{\itshape\leftmark}  % Consistent with even page header
+
 
 \setlength{\cftchapternumwidth}{2.5em}
 \setlength{\cftsectionnumwidth}{3.5em}
